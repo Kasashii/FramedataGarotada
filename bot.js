@@ -264,11 +264,4 @@ client.on("message", async message => {
       message.channel.send (csk)
     }
 });
-bot.on("message", message => {
-  
-  if (message.content == "smh") {
-    message.channel.send({files: [`./gifs/smh.gif`]});
-  }
-
-});
 client.login(BOT_TOKEN);
