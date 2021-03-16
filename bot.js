@@ -304,5 +304,8 @@ const deep17 = ("https://cdn.discordapp.com/attachments/745625387433721866/82149
     if(comando === "deeplef") {
       message.channel.send (resultdeeplef)
     }
+    if(comando === "smh") {
+      message.channel.send ({files: [`./gifs/smh.gif`]})
+    }
 });
 client.login(BOT_TOKEN);
