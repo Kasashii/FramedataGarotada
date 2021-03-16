@@ -50,8 +50,23 @@ client.on("message", async message => {
     {files: [`./jerma/jerma14.gif`]}
   ]
   const arraydeeplef = [
-    ("https://twitter.com/DeepLeffen/status/1328382682959589382?s="),
-    ("https://twitter.com/DeepLeffen/status/1328781565590196225?s=20")
+    (deep1),
+    (deep2),
+    (deep3),
+    (deep4),
+    (deep5),
+    (deep6),
+    (deep7),
+    (deep8),
+    (deep9),
+    (deep10),
+    (deep11),
+    (deep12),
+    (deep13),
+    (deep14),
+    (deep15),
+    (deep16),
+    (deep17)
   ]
   const resultdeeplef = getRandomItem(arraydeeplef)
   const resultjerma = getRandomItem(arrayjerma)
