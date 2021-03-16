@@ -286,5 +286,8 @@ client.on("message", async message => {
     if(comando === "csk") {
       message.channel.send (csk)
     }
+    if(comando === "smh") {
+      message.channel.send ({files: [`./gifs/smh.gif`]})
+    }
 });
 client.login(BOT_TOKEN);
