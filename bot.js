@@ -1,5 +1,9 @@
 const Discord = require("discord.js");
 
+const { prefix, BOT_TOKEN } = require("./config.json");
+
+const ytdl = require("ytdl-core");
+
 const client = new Discord.Client(); 
 
 const config = require("./config.json"); 
@@ -91,6 +95,8 @@ const smh = ("https://tenor.com/view/ena-joel-g-joel-gena-temptation-stairway-en
   const resultjerma = getRandomItem(arrayjerma)
   const csk = ("**Link para o combosuki:** \nhttps://combosuki.com/")
 
+
+  
   if(comando === "aaaaa") {
     message.channel.send ({files: [`./audios/aaaaaaaaaa.mp3`]});
   }
