@@ -50,26 +50,11 @@ client.on("message", async message => {
     {files: [`./jerma/jerma14.gif`]}
   ]
   const arraydeeplef = [
-    ("https://twitter.com/DeepLeffen/status/1371913555067437064?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1369702619627851783?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1369318200576520203?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1368980838499647494?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1367151773203509255?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1360270955055116294?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1358929244714328064?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1351195546158030850?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1349059628466925571?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1346523904257482755?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1341839342826889217?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1341423217911750664?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1333823230851866624?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1328781565590196225?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1328382682959589382?s=20"),
-    ("https://twitter.com/DeepLeffen/status/1326577401032302593?s=20"),
-    ("https://cdn.discordapp.com/attachments/745625387433721866/821490434441347113/20200703_082652.jpg")
+    ("https://twitter.com/DeepLeffen/status/1328382682959589382?s="),
+    ("https://twitter.com/DeepLeffen/status/1328781565590196225?s=20")
   ]
-  const resultjerma = getRandomItem(arrayjerma)
   const resultdeeplef = getRandomItem(arraydeeplef)
+  const resultjerma = getRandomItem(arrayjerma)
   const csk = ("**Link para o combosuki:** \nhttps://combosuki.com/")
 
   if(comando === "aaaaa") {
@@ -277,17 +262,14 @@ client.on("message", async message => {
   if(comando === "jerma") {
     message.channel.send (resultjerma)
   }
-  if(comando === "deeplef") {
-    message.channel.send ("resultdeeplef")
-  }
     if(comando === "combosuki") {
       message.channel.send (csk)
     }
     if(comando === "csk") {
       message.channel.send (csk)
     }
-    if(comando === "smh") {
-      message.channel.send ({files: [`./gifs/smh.gif`]});
+    if(comando === "deeplef") {
+      message.channel.send (resultdeeplef)
     }
 });
 client.login(BOT_TOKEN);
