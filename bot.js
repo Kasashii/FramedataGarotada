@@ -1,7 +1,15 @@
 const Discord = require("discord.js");
+
 const client = new Discord.Client(); 
+
 const config = require("./config.json"); 
 
+const dotenv = require('dotenv');
+
+if(process.env.NODE_ENV !== 'production')
+    dotenv.config();
+    
+const { BOT_TOKEN } = process.env;
 
 client.on("ready", () => {
   console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
@@ -259,6 +267,5 @@ client.on("message", async message => {
       message.channel.send (csk)
     }
 });
-// Áudios ^
-// =====================================================
-client.login(config.token);
+
+client.login(BOT_TOKEN);
