@@ -279,7 +279,7 @@ const deep17 = ("https://cdn.discordapp.com/attachments/745625387433721866/82149
   }
       
   if(comando === "vitima2") {
-    message.channel.send ({files: [`./audios/vitima2.mp3`]})
+    message.channel.send ({files: [`./audios/vitima2.mp3`]});
   }
   
   if(comando === "what") {
@@ -305,7 +305,7 @@ const deep17 = ("https://cdn.discordapp.com/attachments/745625387433721866/82149
       message.channel.send (resultdeeplef)
     }
     if(comando === "smh") {
-      message.channel.send ({files: [`./gifs/smh.gif`]})
+      message.channel.send ({files: [`./gifs/smh.gif`]});
     }
 });
 client.login(BOT_TOKEN);
