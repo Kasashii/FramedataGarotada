@@ -66,7 +66,7 @@ client.on("message", async message => {
     ("https://twitter.com/DeepLeffen/status/1328781565590196225?s=20"),
     ("https://twitter.com/DeepLeffen/status/1328382682959589382?s=20"),
     ("https://twitter.com/DeepLeffen/status/1326577401032302593?s=20"),
-    {files: [`./images/deeplef`]}
+    ("https://cdn.discordapp.com/attachments/745625387433721866/821490434441347113/20200703_082652.jpg")
   ]
   const resultjerma = getRandomItem(arrayjerma)
   const resultdeeplef = getRandomItem(arraydeeplef)
@@ -278,7 +278,7 @@ client.on("message", async message => {
     message.channel.send (resultjerma)
   }
   if(comando === "deeplef") {
-    message.channel.send (resultdeeplef)
+    message.channel.send ("resultdeeplef")
   }
     if(comando === "combosuki") {
       message.channel.send (csk)
@@ -287,7 +287,7 @@ client.on("message", async message => {
       message.channel.send (csk)
     }
     if(comando === "smh") {
-      message.channel.send ({files: [`./gifs/smh.gif`]})
+      message.channel.send ({files: [`./gifs/smh.gif`]});
     }
 });
 client.login(BOT_TOKEN);
