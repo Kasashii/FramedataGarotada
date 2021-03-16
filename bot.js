@@ -294,8 +294,6 @@ const smh = ("https://tenor.com/view/ena-joel-g-joel-gena-temptation-stairway-en
   }
   if(comando === `hug ${message.mentions.members}`) {
     message.channel.send (`${message.author} **deu um abraço em** ${message.mentions.members.first()}**!!**`, {files: [`./gifs/hug.gif`]})
-  } else {
-    message.channel.send ("Você precisa mencionar alguém para abraçar, bobalhão!")
   }
   if(comando === "jerma") {
     message.channel.send (resultjerma)
