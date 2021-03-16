@@ -296,8 +296,10 @@ const smh = ("https://tenor.com/view/ena-joel-g-joel-gena-temptation-stairway-en
   if(comando === "audios") {
     message.channel.send ("Comandos disponíveis: \n > 'aaaaa' (5 letras a) \n > 'acidoforadecontexto' \n > 'acontecendovelho' \n > 'ala_ala' \n > 'alpha' \n > 'americanos' \n > 'antiaereo' \n > 'aviao' \n > 'band' \n > 'barradele' \n > 'botaoerrado' \n > 'cabo_cabo' \n > 'cagada' \n > 'charerrado' \n > 'chefkiss' \n > 'cidade' \n > 'coisasruins' \n > 'dashnamoeda' \n > 'ehehehaha' \n > 'ehtrivial' \n > 'explodiu' \n > 'facildepunir' \n > 'funcionocomo' \n > 'justblock' \n > 'masoq' \n > 'moeda' \n > 'muitounsaaaaaaafe' (7 letras a) \n > 'naoentendo' \n > 'naomatou' \n > 'naoseique' \n > 'naoseuidiota' \n > 'neutro_ex' \n > 'neutro' \n > 'notlikethis' \n > 'notots' \n > 'olhaabarra' \n > 'oloooooco' (5 letras o) \n > 'oquequefoiisso' \n > 'para' \n > 'puniueocaralho' \n > 'qqeufiz' \n > 'idiota_ex' \n > 'snap' \n > 'snapdenovo' \n > 'teabag' \n > 'trollou' \n > 'vaipunir' \n > 'vitima2' \n > 'what' \n OBSERVAÇÃO: Os parênteses em alguns áudios é apenas para avisar a quantidade de vezes que uma letra se repete, não é necessário utiliza-lo na execução do áudio.")
   }
-  if(comando === "hug") {
+  if(comando === `hug ${message.mentions.members}`) {
     message.channel.send (`${message.author} **deu um abraço em** ${message.mentions.members.first()}**!!**`, {files: [`./gifs/hug.gif`]})
+  } else {
+    message.channel.send ("Você precisa mencionar alguém para abraçar, bobalhão!")
   }
   if(comando === "jerma") {
     message.channel.send (resultjerma)
@@ -315,4 +317,129 @@ const smh = ("https://tenor.com/view/ena-joel-g-joel-gena-temptation-stairway-en
       message.channel.send (smh)
     }
 });
+const { prefix, token } = require("./config.json");
+const ytdl = require("ytdl-core");
+
+const queue = new Map();
+
+client.once("ready", () => {
+  console.log("Ready!");
+});
+
+client.once("reconnecting", () => {
+  console.log("Reconnecting!");
+});
+
+client.once("disconnect", () => {
+  console.log("Disconnect!");
+});
+
+client.on("message", async message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  const serverQueue = queue.get(message.guild.id);
+
+  if (message.content.startsWith(`${prefix}play`)) {
+    execute(message, serverQueue);
+    return;
+  } else if (message.content.startsWith(`${prefix}skip`)) {
+    skip(message, serverQueue);
+    return;
+  } else if (message.content.startsWith(`${prefix}stop`)) {
+    stop(message, serverQueue);
+    return;
+  } else {
+    message.channel.send("Comando inválido.");
+  }
+});
+
+async function execute(message, serverQueue) {
+  const args = message.content.split(" ");
+
+  const voiceChannel = message.member.voice.channel;
+  if (!voiceChannel)
+    return message.channel.send(
+      "Você precisa estar em um canal de voz!"
+    );
+  const permissions = voiceChannel.permissionsFor(message.client.user);
+  if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
+    return message.channel.send(
+      "Eu não tenho permissão para entrar neste canal de voz :("
+    );
+  }
+
+  const songInfo = await ytdl.getInfo(args[1]);
+  const song = {
+        title: songInfo.videoDetails.title,
+        url: songInfo.videoDetails.video_url,
+   };
+
+  if (!serverQueue) {
+    const queueContruct = {
+      textChannel: message.channel,
+      voiceChannel: voiceChannel,
+      connection: null,
+      songs: [],
+      volume: 5,
+      playing: true
+    };
+
+    queue.set(message.guild.id, queueContruct);
+
+    queueContruct.songs.push(song);
+
+    try {
+      var connection = await voiceChannel.join();
+      queueContruct.connection = connection;
+      play(message.guild, queueContruct.songs[0]);
+    } catch (err) {
+      console.log(err);
+      queue.delete(message.guild.id);
+      return message.channel.send(err);
+    }
+  } else {
+    serverQueue.songs.push(song);
+    return message.channel.send(`${song.title} Foi adicionado a fila!`);
+  }
+}
+
+function skip(message, serverQueue) {
+  if (!message.member.voice.channel)
+    return message.channel.send(
+      "Você precisa estar em um canal de voz!"
+    );
+  if (!serverQueue)
+    return message.channel.send("Não tem nenhum som pra mim skippar, espertalhão!");
+  serverQueue.connection.dispatcher.end();
+}
+
+function stop(message, serverQueue) {
+  if (!message.member.voice.channel)
+    return message.channel.send(
+      "Você precisa estar no canal de voz pra parar a música!"
+    );
+  serverQueue.songs = [];
+  serverQueue.connection.dispatcher.end();
+}
+
+function play(guild, song) {
+  const serverQueue = queue.get(guild.id);
+  if (!song) {
+    serverQueue.voiceChannel.leave();
+    queue.delete(guild.id);
+    return;
+  }
+
+  const dispatcher = serverQueue.connection
+    .play(ytdl(song.url))
+    .on("pronto", () => {
+      serverQueue.songs.shift();
+      play(guild, serverQueue.songs[0]);
+    })
+    .on("error", error => console.error(error));
+  dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
+  serverQueue.textChannel.send(`Começando a tocar: **${song.title}**`);
+}
+
 client.login(BOT_TOKEN);
