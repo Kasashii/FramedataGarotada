@@ -90,7 +90,7 @@ const smh = ("https://tenor.com/view/ena-joel-g-joel-gena-temptation-stairway-en
   const resultdeeplef = getRandomItem(arraydeeplef)
   const resultjerma = getRandomItem(arrayjerma)
   const csk = ("**Link para o combosuki:** \nhttps://combosuki.com/")
-
+const inteligente = ("https://media.discordapp.net/attachments/772262752340934670/821546797163347988/Capturar24.PNG")
 
   
   if(comando === "aaaaa") {
@@ -309,6 +309,9 @@ const smh = ("https://tenor.com/view/ena-joel-g-joel-gena-temptation-stairway-en
     }
     if(comando === "smh") {
       message.channel.send (smh)
+    }
+    if(comando === "inteligente") {
+      message.channel.send (inteligente)
     }
 });
 client.login(BOT_TOKEN);
