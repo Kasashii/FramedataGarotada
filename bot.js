@@ -316,7 +316,7 @@ const inteligente = ("https://media.discordapp.net/attachments/77226275234093467
   const { tictactoe } = require('reconlx')
 
 module.exports = {
-    name : 'velha',
+    name : 'tictactoe',
     run : async(client, message, args) => {
         const member = message.mentions.members.first() 
             if(!member)  return  message.channel.send('Por favor, marque quem vai jogar com você!')
