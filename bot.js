@@ -317,5 +317,8 @@ const inteligente = ("https://media.discordapp.net/attachments/77226275234093467
   if(comando === "leaderboard") {
     message.channel.send(leaderboard)
   }
+  if(comando === "mains ikki") {
+    message.channel.send ("```MAINS DA GAROTADA!```\n> **IKKISOAD**",{files: [`./images/IkkiMains.jpg`]})
+  }
 });
 client.login(BOT_TOKEN);
