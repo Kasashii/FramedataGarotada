@@ -298,20 +298,34 @@ const inteligente = ("https://media.discordapp.net/attachments/77226275234093467
   if(comando === "jerma") {
     message.channel.send (resultjerma)
   }
-    if(comando === "combosuki") {
+  if(comando === "combosuki") {
       message.channel.send (csk)
-    }
-    if(comando === "csk") {
+  }
+  if(comando === "csk") {
       message.channel.send (csk)
-    }
-    if(comando === "deeplef") {
+  }
+  if(comando === "deeplef") {
       message.channel.send (resultdeeplef)
-    }
-    if(comando === "smh") {
+  }
+  if(comando === "smh") {
       message.channel.send (smh)
-    }
-    if(comando === "inteligente") {
+  }
+  if(comando === "inteligente") {
       message.channel.send (inteligente)
+  }
+  const { tictactoe } = require('reconlx')
+
+module.exports = {
+    name : 'velha',
+    run : async(client, message, args) => {
+        const member = message.mentions.members.first() 
+            if(!member)  return  message.channel.send('Por favor, marque quem vai jogar com você!')
+        
+        new tictactoe({
+            player_two: member, 
+            message: message
+        })
     }
+}
 });
 client.login(BOT_TOKEN);
