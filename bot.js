@@ -91,8 +91,8 @@ const arraydeeplef = [
   const resultdeeplef = getRandomItem(arraydeeplef)
   const resultjerma = getRandomItem(arrayjerma)
   const csk = ("**Link para o combosuki:** \nhttps://combosuki.com/")
- const inteligente = ("https://media.discordapp.net/attachments/772262752340934670/821546797163347988/Capturar24.PNG")
- const ikki = ("```MAINS DA GAROTADA!```\n> IKKISOAD\nhttps://cdn.discordapp.com/attachments/617094243231465485/821855148787367986/IkkiMains.jpg")
+  const inteligente = ("https://media.discordapp.net/attachments/772262752340934670/821546797163347988/Capturar24.PNG")
+  const ikki = ("```MAINS DA GAROTADA!```\n> IKKISOAD\nhttps://cdn.discordapp.com/attachments/617094243231465485/821855148787367986/IkkiMains.jpg")
   
   if(comando === "aaaaa") {
     message.channel.send ({files: [`./audios/aaaaaaaaaa.mp3`]});
@@ -317,7 +317,7 @@ const arraydeeplef = [
   if(comando === "leaderboard") {
     message.channel.send(leaderboard)
   }
-  if(comando === "mains ikki") {
+  if(comando === "mains_ikki") {
     message.channel.send (ikki)
   }
 });
