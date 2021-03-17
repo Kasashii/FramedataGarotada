@@ -318,7 +318,10 @@ const arraydeeplef = [
     message.channel.send(leaderboard)
   }
   if(comando === "mains_ikki") {
-    message.channel.send (ikki)
+    message.channel.send ("```MAINS DA GAROTADA!```\n> `Jogador:` *Ikkisoad*\n> `Personagens:` *Valentine, Cerebella, Robo fortune.*\n> `Rank:`  *1st, 64 vitórias, 38 derrotas.*\n> `Cores:` *21, 2 e 15.*\n \n**Observação:** *As cores estão ordenadas de acordo com a imagem.*")
+  }
+  if(comando === "mains_ikki") {
+    message.channel.send ({files: [`./images/IkkiMains.jpg`]});
   }
 });
 client.login(BOT_TOKEN);
