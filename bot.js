@@ -313,5 +313,25 @@ const inteligente = ("https://media.discordapp.net/attachments/77226275234093467
     if(comando === "inteligente") {
       message.channel.send (inteligente)
     }
+    command(client, 'Fukua jLP', (message) => {
+      const logo = 'https://images-ext-1.discordapp.net/external/DrdmNMXmbkcge0sJKP7XaCKhoRvBpr7zbr9W0f7vy0I/https/wiki.gbl.gg/images/1/17/SG_fuk_jlp_fd.png'
+      const jLP = 'https://images-ext-2.discordapp.net/external/-Et8gJ7931agcva22E6D92VEAb0JdzZNKEUuPifAX3I/https/wiki.gbl.gg/images/f/fb/SG_fuk_jlp_hb.png'
+      const embed = new Discord.MessageEmbed()
+        .setTitle("FUKUA - jLP")
+        .setImage(jLP)
+        .setThumbnail(logo)
+        .addFields(
+          {
+            name: `BOTÃO DESGRAÇADO`,
+            value: '+10 onblock VSF',
+            inline: true
+          },
+            {
+            name: 'Eu odeio esse botão',
+            value: 'ahahaha eu sou +10 on block ahaha q legal',
+            inline: true
+          }
+          )
+    })
 });
 client.login(BOT_TOKEN);
