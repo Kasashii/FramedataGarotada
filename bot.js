@@ -67,8 +67,9 @@ const deep15 = ("https://twitter.com/DeepLeffen/status/1328382682959589382?s=20"
 const deep16 = ("https://twitter.com/DeepLeffen/status/1326577401032302593?s=20")
 const deep17 = ("https://cdn.discordapp.com/attachments/745625387433721866/821490434441347113/20200703_082652.jpg")
 const smh = ("https://tenor.com/view/ena-joel-g-joel-gena-temptation-stairway-ena-nod-gif-20387490")
-
-  const arraydeeplef = [
+const leaderboard = ("```js\n- TORNEIO DA GAROTADA - > 2021: ```\n```LEADERBOARD  --   PLAYER   -------   SCORE```\n:zero::one:|:stop_button:            **|**     `Ikkisoad`                  **|**     *64/38\n:zero::two:|:stop_button:            **|**     `Ryuuji_kei`              **|**     *63/52*\n:zero::three:|:stop_button:            **|**     `ShinyPine`                **|**     *45/46*\n:zero::four:|:stop_button:            **|**     `Vargão`                      **|**     *32/27*\n:zero::five:|:stop_button:            **|**     `Aristal`                    **|**     *25/15*\n:zero::six:|:stop_button:            **|**     `Kasashi`                    **|**     *22/38*\n:zero::seven:|:stop_button:            **|**     `CrushMachine`          **|**    *15/1*\n:zero::eight:|:stop_button:            **|**     `danieldx`                  **|**    *13/8*\n:zero::nine:|:stop_button:            **|**     `Shieda`                      **|**    *13/46*\n:one::zero:|:stop_button:            **|**     `LochNessMobster`   **|**     *12/10*\n:one::one:|:stop_button:            **|**     `handsforup`             **|**     *9/2*\n:one::two:|:arrow_double_up:            **|**     `Kaito`                       **|**     *9/11*:one::three:|:arrow_down_small:            **|**     `Athylia`                   **|**     *8/21*:one::four:|:arrow_down_small:            **|**     `Army`                         **|**     *3/6*:one::five:|:arrow_down_small:            **|**     `Sewdras`                   **|**     *1/6*")
+  
+const arraydeeplef = [
     (deep1),
     (deep2),
     (deep3),
@@ -313,19 +314,8 @@ const inteligente = ("https://media.discordapp.net/attachments/77226275234093467
   if(comando === "inteligente") {
       message.channel.send (inteligente)
   }
-  const { tictactoe } = require('reconlx')
-
-module.exports = {
-    name : 'tictactoe',
-    run : async(client, message, args) => {
-        const member = message.mentions.members.first() 
-            if(!member)  return  message.channel.send('Por favor, marque quem vai jogar com você!')
-        
-        new tictactoe({
-            player_two: member, 
-            message: message
-        })
-    }
-}
+  if(comando === "leaderboard") {
+    message.channel.send(leaderboard)
+  }
 });
 client.login(BOT_TOKEN);
