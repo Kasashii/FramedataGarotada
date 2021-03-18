@@ -93,7 +93,19 @@ const arraydeeplef = [
   const csk = ("**Link para o combosuki:** \nhttps://combosuki.com/")
   const inteligente = ("https://media.discordapp.net/attachments/772262752340934670/821546797163347988/Capturar24.PNG")
   const ikki = ("```MAINS DA GAROTADA!```\n> IKKISOAD\nhttps://cdn.discordapp.com/attachments/617094243231465485/821855148787367986/IkkiMains.jpg")
-  
+  const fukuajlp = Discord.MessageEmbed()
+    .setColor('#186616')
+    .setTitle('FUKUA jLP')
+    .setThumbnail('https://images-ext-2.discordapp.net/external/-Et8gJ7931agcva22E6D92VEAb0JdzZNKEUuPifAX3I/https/wiki.gbl.gg/images/f/fb/SG_fuk_jlp_hb.png')
+    .addFields(
+      {
+        name: 'Guard', value: 'High', inline: true
+      },
+      {
+        name: "Damage", value: '200', inline: true
+      }
+    )
+
   if(comando === "aaaaa") {
     message.channel.send ({files: [`./audios/aaaaaaaaaa.mp3`]});
   }
@@ -322,6 +334,9 @@ const arraydeeplef = [
   }
   if(comando === "mains_ikki") {
     message.channel.send ({files: [`./images/IkkiMains.jpg`]});
+  }
+  if(comando === "fukua_jLP") {
+    message.channel.send (fukuajlp)
   }
 });
 client.login(BOT_TOKEN);
