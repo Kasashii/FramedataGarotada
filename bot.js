@@ -335,8 +335,5 @@ const arraydeeplef = [
   if(comando === "mains_ikki") {
     message.channel.send ({files: [`./images/IkkiMains.jpg`]});
   }
-  if(comando === "fukua_jLP") {
-    message.channel.send (fukuajlp)
-  }
 });
 client.login(BOT_TOKEN);
