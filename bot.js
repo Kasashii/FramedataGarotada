@@ -329,5 +329,8 @@ const arraydeeplef = [
   if(comando === "mains_shiny") {
     message.channel.send (shiny)
   }
+  if(comando === "mains_crush") {
+    message.channel.send ("```MAINS DA GAROTADA!!!```\n> `Jogador:` **CrushMachine**\n> `Sets:` *15/1.*\n> `Rank:` *7th.*\n> `Winrate:` *93%.*\n========================\n> `Jogo:` **Skullgirls**\n>  `Personagens:`  *Valentine, Robo-Fortune.*\n========================\n>  `Jogo:` **Tekken**\n>  `Personagem:` *Kunimitsu.*\n========================\n> `Jogo:` **Guilty gear +R**\n> `Personagem:`  *Millia.*\n========================\n> `Jogo:` **Samsho**\n> `Personagem:` *Basara.*\n========================\n> `Jogo:` **UNI**\n> `Personagem:` *Merkava.*\n========================\n> `Jogo:` **Street Fighter 5**\n> `Personagem:` *Juri.*\n========================\n > `Jogo:` **Street Fighter 3rd Strike**\n> `Personagem:` *Ibuki.*")
+  }
 });
 client.login(BOT_TOKEN);
