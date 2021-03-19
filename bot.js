@@ -69,7 +69,7 @@ const deep16 = ("https://twitter.com/DeepLeffen/status/1326577401032302593?s=20"
 const deep17 = ("https://cdn.discordapp.com/attachments/745625387433721866/821490434441347113/20200703_082652.jpg")
 const smh = ("https://tenor.com/view/ena-joel-g-joel-gena-temptation-stairway-ena-nod-gif-20387490")
 const leaderboard = ("```js\n- TORNEIO DA GAROTADA - > 2021: ```\n```LEADERBOARD  --   PLAYER   -------   SCORE```\n:zero::one:|:stop_button:            **|**     `Ikkisoad`                  **|**     *73/38*\n:zero::two:|:stop_button:            **|**     `Ryuuji_kei`              **|**     *63/52*\n:zero::three:|:stop_button:            **|**     `ShinyPine`                **|**     *51/53*\n:zero::four:|:stop_button:            **|**     `Vargão`                      **|**     *32/27*\n:zero::five:|:stop_button:            **|**     `Aristal`                    **|**     *25/15*\n:zero::six:|:stop_button:            **|**     `Kasashi`                    **|**     *22/44*\n:zero::seven:|:stop_button:            **|**     `CrushMachine`          **|**    *15/1*\n:zero::eight:|:stop_button:            **|**     `danieldx`                  **|**    *13/8*\n:zero::nine:|:stop_button:            **|**     `Shieda`                      **|**    *13/46*\n:one::zero:|:stop_button:            **|**     `LochNessMobster`   **|**    *12/10*\n:one::one:|:arrow_double_up:            **|**     `Athylia`                   **|**     *12/27*\n:one::two:|:arrow_down_small:            **|**     `handsforup`             **|**     *9/2*\n:one::three:|:arrow_down_small:            **|**     `Kaito`                       **|**     *9/11*\n:one::four:|:stop_button:            **|**     `Army`                         **|**     *3/6*\n:one::five:|:stop_button:            **|**     `Sewdras`                   **|**     *1/6*")
-  
+const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540737173913610/Shinypine5.png")
 const arraydeeplef = [
     (deep1),
     (deep2),
@@ -322,6 +322,9 @@ const arraydeeplef = [
   }
   if(comando === "mains_ikki") {
     message.channel.send ({files: [`./images/IkkiMains.jpg`]});
+  }
+  if(comando === "mains_shiny") {
+    message.channel.send (shiny)
   }
 });
 client.login(BOT_TOKEN);
