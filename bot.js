@@ -328,5 +328,8 @@ const arraydeeplef = [
   if(comando === "mains_vargao") {
     message.channel.send ("```MAINS DA GAROTADA!!!```\n> `Jogador:` **Vargão**\n> `Sets:` *32/27.*\n> `Rank:` *4th.*\n> `Winrate:` *54%.*\n========================\n> `Jogo:` **3S**\n> `Personagem:` *Alex.*\n========================\n> `Jogo:` **Dengeki**\n> `Personagem:` *Shizuo.*\n> **Assist/Burst:** *Dokoro/Izaya.*\n>========================\n> `Jogo:` **Guilty gear +R**\n> `Personagem:`  *Johnny.*\n========================\n> `Jogo:` **KI**\n> `Personagem:` *Shadow Jago.*\n========================\n> `Jogo:` **KOF 2002**\n> `Personagens:` *Clark Steel.*\n========================\n> `Jogo:` **Melty**\n> `Personagem:` *Roa.*\n> `Moon:` *Crescent*\n========================\n> `Jogo:` **Samsho**\n> `Personagem:` *Tokugawa Yoshitora.*\n========================\n> `Jogo:` **SFV**\n> `Personagem:` *Alex.*\n========================\n> `Jogo:` **Tekken**\n>  `Personagens:`  *Bryan Fury.*\n========================\n> `Jogo:` **UNICLR**\n> `Personagem:` *Yuzuriha.*\n========================\n> `Jogo:` **Vampire Savior**\n> `Personagem:` *Jon Talbain/Gallon.*")
   }
+  if(comando === "mains_aristal") {
+    message.channel.send ("```MAINS DA GAROTADA!!!```\n> `Jogador:` **Aristal**\n> `Sets:` *25/15.*\n> `Rank:` *5th.*\n> `Winrate:` *62%.*\n========================\n> `Jogo:` **3S**\n> `Personagem:` *Urien, Ken e Dudley.*\n========================\n> `Jogo:` **Skullgirls**\n>  `Personagens:`  *Eliza, Parasoul, Squigly, Cerebella e Annie.*\n========================\n> `Jogo:` **Tekken**\n> `Personagem:` *Steve Fox*\n========================\n> `Jogo:` **UNICLR**\n> `Personagem:` *Byakuya e Hilda.*")
+  }
 });
 client.login(BOT_TOKEN);
