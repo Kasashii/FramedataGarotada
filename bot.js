@@ -340,5 +340,9 @@ const arraydeeplef = [
   if(comando === "mains_loch") {
     message.channel.send ("```MAINS DA GAROTADA!!!```\n> `Jogador:` **LochNessMobster**\n> `Sets:` *12/10.*\n> `Rank:` *10th.*\n> `Winrate:` *54%.*\n========================\n> `Jogo:` **Guilty gear +R**\n> `Personagem:`  *Faust.*\n========================\n> `Jogo:` **KI**\n> `Personagem:` *Aganos.*\n========================\n> `Jogo:` **Samsho**\n> `Personagem:` *TamTam.*\n========================\n> `Jogo:` **Skullgirls**\n>  `Personagens:`  *Cerebella, BigBand.*")
   }
+  if(comando === "mains_daniel") {
+    message.channel.send ("```MAINS DA GAROTADA!!!```\n> `Jogador:` **DanielDX**\n> `Sets:` *13/8.*\n> `Rank:` *8th.*\n> `Winrate:` *61%.*\n========================\n> `Jogo:` **3S**\n> `Personagem:` *Alex.*\n========================\n> `Jogo:` **Guilty gear +R**\n> `Personagem:`  *Potemkin.*\n========================\n> `Jogo:` **KI**\n> `Personagem:` *Thunder.*\n========================\n> `Jogo:` **SFV**\n> `Personagem:` *Alex.*")
+  }
+
 });
 client.login(BOT_TOKEN);
