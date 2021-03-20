@@ -390,5 +390,8 @@ const arraydeeplef = [
   if(comando === "aulas") {
     message.channel.send ("```Aulas que o Loch deu!```\n`g!aula1`\n`g!aula2`")
   }
+  if(comando === "ikki") {
+    message.channel.send ("tudo o sucesso dos caras é pelo Ikki, eu acho q Ikki teria q ser nosso novo pilar, Ikki fiz mais q o Noaa pela comunidade, Ikki fiz mais q o Lugon pela comunidade, Ikki é o verdadeiro coraçao de Brasil, obrigado Ikki, obrigado Lobby da Garotada  ;p ;p")
+  }
 });
 client.login(BOT_TOKEN);
