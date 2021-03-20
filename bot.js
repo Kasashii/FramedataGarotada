@@ -331,5 +331,8 @@ const arraydeeplef = [
   if(comando === "mains_aristal") {
     message.channel.send ("```MAINS DA GAROTADA!!!```\n> `Jogador:` **Aristal**\n> `Sets:` *25/15.*\n> `Rank:` *5th.*\n> `Winrate:` *62%.*\n========================\n> `Jogo:` **3S**\n> `Personagem:` *Urien, Ken e Dudley.*\n========================\n> `Jogo:` **Skullgirls**\n>  `Personagens:`  *Eliza, Parasoul, Squigly, Cerebella e Annie.*\n========================\n> `Jogo:` **Tekken**\n> `Personagem:` *Steve Fox*\n========================\n> `Jogo:` **UNICLR**\n> `Personagem:` *Byakuya e Hilda.*")
   }
+  if(comando === "mains_shieda") {
+    message.channel.send ("```MAINS DA GAROTADA!!!```\n> `Jogador:` **Shieda**\n> `Sets:` *25/15.*\n> `Rank:` *9th.*\n> `Winrate:` *22%.*\n========================\n> `Jogo:` **3S**\n> `Personagem:` *Makoto.*\n========================\n> `Jogo:` **BBCF**\n> `Personagem:` *Terumi.*\n>========================\n> `Jogo:` **BBTAG**\n> `Personagens:` *Yuzuriha, Adachi, Susanoo, Seth, Carmine, Yang, Akatsuki*\n>========================\n> `Jogo:` **Dengeki**\n> `Personagem:` *Tatsuya.*\n> **Assist/Burst:** *Celty, Rusian, Dokuro.*\n>========================\n> `Jogo:` **Guilty gear +R**\n> `Personagem:`  *Zappa.*\n========================\n> `Jogo:` **Jojo**\n> `Personagem:` *Black Polnareff.*\n========================\n> `Jogo:` **KI**\n> `Personagem:` *TJ, Hisako.*\n========================\n> `Jogo:` **Nitroplus**\n> `Personagens:` *Saber, Dragon.*\n========================\n> `Jogo:` **SFV**\n> `Personagem:` *Seth.*\n========================\n> `Jogo:` **Skullgirls**\n>  `Personagens:`  *Beowulf, BigBand.*")
+  }
 });
 client.login(BOT_TOKEN);
