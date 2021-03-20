@@ -292,9 +292,6 @@ const arraydeeplef = [
   if(comando === "audios") {
     message.channel.send ("Comandos disponíveis: \n > 'aaaaa' (5 letras a) \n > 'acidoforadecontexto' \n > 'acontecendovelho' \n > 'ala_ala' \n > 'alpha' \n > 'americanos' \n > 'antiaereo' \n > 'aviao' \n > 'band' \n > 'barradele' \n > 'botaoerrado' \n > 'cabo_cabo' \n > 'cagada' \n > 'charerrado' \n > 'chefkiss' \n > 'cidade' \n > 'coisasruins' \n > 'dashnamoeda' \n > 'ehehehaha' \n > 'ehtrivial' \n > 'explodiu' \n > 'facildepunir' \n > 'funcionocomo' \n > 'justblock' \n > 'masoq' \n > 'moeda' \n > 'muitounsaaaaaaafe' (7 letras a) \n > 'naoentendo' \n > 'naomatou' \n > 'naoseique' \n > 'naoseuidiota' \n > 'neutro_ex' \n > 'neutro' \n > 'notlikethis' \n > 'notots' \n > 'olhaabarra' \n > 'oloooooco' (5 letras o) \n > 'oquequefoiisso' \n > 'para' \n > 'puniueocaralho' \n > 'qqeufiz' \n > 'idiota_ex' \n > 'snap' \n > 'snapdenovo' \n > 'teabag' \n > 'trollou' \n > 'vaipunir' \n > 'vitima2' \n > 'what' \n OBSERVAÇÃO: Os parênteses em alguns áudios é apenas para avisar a quantidade de vezes que uma letra se repete, não é necessário utiliza-lo na execução do áudio.")
   }
-  if(comando === "hug") {
-    message.channel.send (`${message.author} **deu um abraço em** ${message.mentions.members.first()}**!!**`, {files: [`./gifs/hug.gif`]})
-  }
   if(comando === "jerma") {
     message.channel.send (resultjerma)
   }
@@ -363,6 +360,21 @@ const arraydeeplef = [
   }
   if(comando === "mains") {
     message.channel.send ("```MAINS DA GAROTADA!!!```\n`g!mains_alone`\n`g!mains_aristal`\n`g!mains_army`\n`g!mains_athylia`\n`g!mains_crush`\n`g!mains_daniel`\n`g!mains_hands`\n`g!mains_ikki`\n`g!mains_kaito`\n`g!mains_loch`\n`g!mains_ryuuji`\n`g!mains_sewdras`\n`g!mains_shieda`\n`g!mains_shiny`\n`g!mains_vargao`")
+  }
+  const neutral = ("https://media.discordapp.net/attachments/772273045229928488/822899783361495050/unknown.png")
+  if(comando === "neutral") {
+    message.channel.send (neutral)
+  }
+  const cLK = ("https://media.discordapp.net/attachments/772273045229928488/822899906938798101/unknown.png")
+  if(comando === "cLK") {
+    message.channel.send (cLK)
+  }
+  const eliza = ("https://media.discordapp.net/attachments/772273045229928488/822254671347449906/unknown.png")
+  if(comando === "eliza") {
+    message.channel.send (eliza)
+  }
+  if(comando === "help") {
+    message.channel.send ("```COMANDOS DA GAROTADA```\n`INÚTEIS/FUN`\ng!eliza\ng!cLK\ng!smh\ng!inteligente\ng!neutral\ng!deeplef\ng!jerma\n`GAROTADA ISSUES`\n g!mains\ng!leaderboard\ng!csk OU g!combosuki\ng!audios")
   }
 });
 client.login(BOT_TOKEN);
