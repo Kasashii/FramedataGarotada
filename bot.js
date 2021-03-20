@@ -393,5 +393,8 @@ const arraydeeplef = [
   if(comando === "ikki") {
     message.channel.send ("tudo o sucesso dos caras é pelo Ikki, eu acho q Ikki teria q ser nosso novo pilar, Ikki fiz mais q o Noaa pela comunidade, Ikki fiz mais q o Lugon pela comunidade, Ikki é o verdadeiro coraçao de Brasil, obrigado Ikki, obrigado Lobby da Garotada  ;p ;p")
   }
+  if(comando === "parabens") {
+    message.channel.send ("Parabéns pelo 2nd lugar!")
+  }
 });
 client.login(BOT_TOKEN);
