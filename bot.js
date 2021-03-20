@@ -373,7 +373,7 @@ const arraydeeplef = [
   if(comando === "eliza") {
     message.channel.send (eliza)
   }
-  if(comando === "help") {
+  if(comando === "ajuda") {
     message.channel.send ("```COMANDOS DA GAROTADA```\n**INÚTEIS/FUN**\n`g!eliza`\n`g!cLK`\n`g!smh`\n`g!inteligente`\n`g!neutral`\n`g!deeplef`\n`g!jerma`\n**GAROTADA ISSUES**\n`g!mains`\n`g!leaderboard`\n`g!csk OU g!combosuki`\n`g!audios`")
   }
 });
