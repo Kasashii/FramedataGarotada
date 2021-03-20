@@ -365,16 +365,19 @@ const arraydeeplef = [
   if(comando === "neutral") {
     message.channel.send (neutral)
   }
-  const cLK = ("https://media.discordapp.net/attachments/772273045229928488/822899906938798101/unknown.png")
-  if(comando === "cLK") {
-    message.channel.send (cLK)
+  const crounchinglightkick = ("https://media.discordapp.net/attachments/772273045229928488/822899906938798101/unknown.png")
+  if(comando === "clk") {
+    message.channel.send (crounchinglightkick)
   }
   const eliza = ("https://media.discordapp.net/attachments/772273045229928488/822254671347449906/unknown.png")
-  if(comando === "eliza") {
+  if(comando === "1000horas") {
+    message.channel.send (eliza)
+  }
+  if(comando === "milhoras") {
     message.channel.send (eliza)
   }
   if(comando === "ajuda") {
-    message.channel.send ("```COMANDOS DA GAROTADA```\n**INÚTEIS/FUN**\n`g!eliza`\n`g!cLK`\n`g!smh`\n`g!inteligente`\n`g!neutral`\n`g!deeplef`\n`g!jerma`\n**GAROTADA ISSUES**\n`g!mains`\n`g!leaderboard`\n`g!csk OU g!combosuki`\n`g!audios`")
+    message.channel.send ("```COMANDOS DA GAROTADA```\n**INÚTEIS/FUN**\n`g!1000horas/g!milhoras`\n`g!cLK`\n`g!smh`\n`g!inteligente`\n`g!neutral`\n`g!deeplef`\n`g!jerma`\n**GAROTADA ISSUES**\n`g!mains`\n`g!leaderboard`\n`g!csk OU g!combosuki`\n`g!audios`")
   }
 });
 client.login(BOT_TOKEN);
