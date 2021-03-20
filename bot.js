@@ -346,5 +346,11 @@ const arraydeeplef = [
   if(comando === "mains_ryuuji") {
     message.channel.send ("```MAINS DA GAROTADA!!!```\n> `Jogador:` **Ryuuji-K**\n> `Sets:` *63/52.*\n> `Rank:` *2nd.*\n> `Winrate:` *54%.*\n========================\n> `Jogo:` **3S**\n> `Personagem:` *Ryu.*\n========================\n> `Jogo:` **BBCF**\n> `Personagem:` *Mu12.*\n>========================\n> `Jogo:` **Dengeki**\n> `Personagem:` *Ako.*\n> **Assist/Burst:** *Rusian.*\n>========================\n> `Jogo:` **Guilty gear +R**\n> `Personagem:`  *May e Zappa.*\n========================\n> `Jogo:` **Jojo**\n> `Personagem:` *Hol Horse.*\n========================\n> `Jogo:` **KI**\n> `Personagem:` *Eagle.*\n========================\n> `Jogo:` **KOF XIII**\n> `Personagens:` *Yuri, Terry e Kenso.*\n========================\n> `Jogo:` **Melty**\n> `Personagem:` *Aoko.*\n> `Moon:` *Crescent.*\n========================\n> `Jogo:` **Nitroplus**\n> `Personagens:` *Ein.*\n========================\n> `Jogo:` **Skullgirls**\n>  `Personagens:`  *Parasoul, Robo-fortune, Peacock.*\n========================\n> `Jogo:` **TFH**\n> `Personagem:` *Velvet.*\n========================\n> `Jogo:` **UNICLR**\n> `Personagem:` *Nanase.*\n========================\n> `Jogo:` **Vampire Savior**\n> `Personagem:` *Lei-Lei (Hsien-ko).*")
   }
+  if(comando === "mains_hands") {
+    message.channel.send ("```MAINS DA GAROTADA!!!```\n> `Jogador:` **HandsForUp**\n> `Sets:` *9/2.*\n> `Rank:` *2nd.*\n> `Winrate:` *90%.*\n========================\n> `Jogo:` **3S**\n> `Personagem:` *Makoto.*\n========================\n> `Jogo:` **SFV**\n> `Personagem:` *Blanka.*\n========================\n> `Jogo:` **Skullgirls**\n>  `Personagens:`  *BigBand.*\n========================\n> `Jogo:` **TFH**\n> `Personagem:` *Tian-Huo.*")
+  }
+  if(comando === "mains") {
+    message.channel.send ("```MAINS DA GAROTADA!!!```\n`g!mains_aristal`\n`g!mains_army`\n`g!mains_crush`\n`g!mains_daniel`\n`g!mains_hands`\n`g!mains_ikki`\n`g!mains_loch`\n`g!mains_ryuuji`\n`g!mains_shieda`\n`g!mains_shiny`\n`g!mains_vargao`")
+  }
 });
 client.login(BOT_TOKEN);
