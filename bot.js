@@ -349,8 +349,13 @@ const arraydeeplef = [
   if(comando === "mains_hands") {
     message.channel.send ("```MAINS DA GAROTADA!!!```\n> `Jogador:` **HandsForUp**\n> `Sets:` *9/2.*\n> `Rank:` *12th.*\n> `Winrate:` *90%.*\n========================\n> `Jogo:` **3S**\n> `Personagem:` *Makoto.*\n========================\n> `Jogo:` **SFV**\n> `Personagem:` *Blanka.*\n========================\n> `Jogo:` **Skullgirls**\n>  `Personagens:`  *BigBand.*\n========================\n> `Jogo:` **TFH**\n> `Personagem:` *Tian-Huo.*")
   }
+  if(comando === "mains_kaito") {
+    message.channel.send ("```MAINS DA GAROTADA!!!```\n> `Jogador:` **Kaito**\n> `Sets:` *9/11.*\n> `Rank:` *13th.*\n> `Winrate:` *45%.*\n========================\n> `Jogo:` **3S**\n> `Personagem:` *Alex.*\n========================\n> `Jogo:` **Melty**\n> `Personagem:` *Hisui.*\n> `Moon:` *Full.*\n========================\n> `Jogo:` **Skullgirls**\n>  `Personagens:`  *Beowulf, BigBand, Filia, Squigly.*")
+  }
+
+
   if(comando === "mains") {
-    message.channel.send ("```MAINS DA GAROTADA!!!```\n`g!mains_aristal`\n`g!mains_army`\n`g!mains_crush`\n`g!mains_daniel`\n`g!mains_hands`\n`g!mains_ikki`\n`g!mains_loch`\n`g!mains_ryuuji`\n`g!mains_shieda`\n`g!mains_shiny`\n`g!mains_vargao`")
+    message.channel.send ("```MAINS DA GAROTADA!!!```\n`g!mains_aristal`\n`g!mains_army`\n`g!mains_crush`\n`g!mains_daniel`\n`g!mains_hands`\n`g!mains_ikki`\n`g!mains_kaito`\n`g!mains_loch`\n`g!mains_ryuuji`\n`g!mains_shieda`\n`g!mains_shiny`\n`g!mains_vargao`")
   }
 });
 client.login(BOT_TOKEN);
