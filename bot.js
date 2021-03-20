@@ -383,7 +383,7 @@ const arraydeeplef = [
   if(comando === "aula1") {
     message.channel.send (aula1)
   }
-  const aula2 = ("https://youtu.be/5wM0jqrGa0w?t=5849")
+  const aula2 = ("https://youtu.be/-9TaSllE0Kg")
   if(comando === "aula2") {
     message.channel.send (aula2)
   }
