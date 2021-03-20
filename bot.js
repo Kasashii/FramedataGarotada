@@ -374,7 +374,7 @@ const arraydeeplef = [
     message.channel.send (eliza)
   }
   if(comando === "help") {
-    message.channel.send ("```COMANDOS DA GAROTADA```\n`INÚTEIS/FUN`\ng!eliza\ng!cLK\ng!smh\ng!inteligente\ng!neutral\ng!deeplef\ng!jerma\n`GAROTADA ISSUES`\n g!mains\ng!leaderboard\ng!csk OU g!combosuki\ng!audios")
+    message.channel.send ("```COMANDOS DA GAROTADA```\n**INÚTEIS/FUN**\n`g!eliza`\n`g!cLK`\n`g!smh`\n`g!inteligente`\n`g!neutral`\n`g!deeplef`\n`g!jerma`\n**GAROTADA ISSUES**\n`g!mains`\n`g!leaderboard`\n`g!csk OU g!combosuki`\n`g!audios`")
   }
 });
 client.login(BOT_TOKEN);
