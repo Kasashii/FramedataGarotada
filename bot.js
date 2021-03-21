@@ -412,10 +412,9 @@ const arraydeeplef = [
   if(comando === "fg") {
     message.channel.send (fg)
   }
-  const xisde = (`${getRandomInt}`)
-  let user = message.mentions.users.first() || client.users.cache.get(args[0]);
+  const xisde = (getRandomInt)
   if(comando === "gay") {
-    message.channel.send (`${user.username} **é ${getRandomInt}% gay... Podem zoar ele, garotada!**`)
+    message.channel.send (`${message.mentions.users.first()} **é ${xisde}% gay... Podem zoar ele, garotada!**`)
   }
 });
 client.login(BOT_TOKEN);
