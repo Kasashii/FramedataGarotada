@@ -408,12 +408,12 @@ const arraydeeplef = [
     message.channel.send (fg)
   }
   let Total = 0
-if(message.content == 'hello'){
+if(message.content == 'jogo ruim'){
     Total += 1
     if(Total > 5){
-        message.reply('Concordo, esse jogo realmente é bem ruim.')
+        message.channel.send('Concordo, esse jogo realmente é bem ruim.')
      }else{
-         message.reply('Ah cara, vai tomar no cu esse jogo na moral.')
+         message.channel.send('Ah cara, vai tomar no cu esse jogo na moral.')
     }
 }
 });
