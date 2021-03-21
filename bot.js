@@ -407,5 +407,14 @@ const arraydeeplef = [
   if(comando === "fg") {
     message.channel.send (fg)
   }
+  let Total = 0
+if(message.content == 'jogo ruim'){
+    Total += 1
+    if(Total > 5){
+        message.reply('Concordo, esse jogo realmente é bem ruim.')
+     }else{
+         message.reply('Ah cara, vai tomar no cu esse jogo na moral.')
+    }
+}
 });
 client.login(BOT_TOKEN);
