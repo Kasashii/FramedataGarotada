@@ -412,6 +412,7 @@ const arraydeeplef = [
   if(comando === "fg") {
     message.channel.send (fg)
   }
+  let user = message.mentions.users.first() || client.users.cache.get(args[0]);
   if(comando === "gay") {
     message.channel.send (`${user.username} **é`, getRandomInt,`% homossexual!**`)
   }
