@@ -377,7 +377,7 @@ const arraydeeplef = [
     message.channel.send (eliza)
   }
   if(comando === "ajuda") {
-    message.channel.send ("```COMANDOS DA GAROTADA```\n**ADICIONADOS NO ÚLTIMO DEPLOY!**\n`g!ikki`\n`g!parabens`\n**INÚTEIS/FUN**`\ng!1000horas/g!milhoras`\n`g!cLK`\n`g!smh`\n`g!inteligente`\n`g!neutral`\n`g!deeplef`\n`g!jerma`\n**GAROTADA ISSUES**\n`g!aulas`\n`g!mains`\n`g!leaderboard`\n`g!csk OU g!combosuki`\n`g!audios`")
+    message.channel.send ("```COMANDOS DA GAROTADA```\n**ADICIONADOS NO ÚLTIMO DEPLOY!**\n`g!noticia`\n**INÚTEIS/FUN**`\n`g!ikki`\n`g!parabens`\ng!1000horas/g!milhoras`\n`g!cLK`\n`g!smh`\n`g!inteligente`\n`g!neutral`\n`g!deeplef`\n`g!jerma`\n**GAROTADA ISSUES**\n`g!aulas`\n`g!mains`\n`g!leaderboard`\n`g!csk OU g!combosuki`\n`g!audios`")
   }
   const aula1 = ("https://youtu.be/5wM0jqrGa0w")
   if(comando === "aula1") {
@@ -395,6 +395,9 @@ const arraydeeplef = [
   }
   if(comando === "parabens") {
     message.channel.send ("Parabéns pelo 2nd lugar!")
+  }
+  if(comando === "noticia") {
+    message.channel.send ("a má notícia é que sim, você é um lixo. Como 99,9% dos players que passam pela minha mão. Você é evidentemente um amador total sem a noção mais basilar dos princípios fundamentais que regem todos os jogos de luta. Então antes de te ensinar 3rd strike, eu vou ter que te ensinar jogos de luta")
   }
 });
 client.login(BOT_TOKEN);
