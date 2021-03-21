@@ -413,6 +413,29 @@ const arraydeeplef = [
   if(Total1 = +5){
         message.channel.send('Concordo, esse jogo realmente é bem ruim.')
     }
+
+  const teste = {
+    Personagem1: {
+      HP: ("42"),
+      Attack: ("162xMultiplicador")
+    },
+    Personagem2: {
+      HP: ("67"),
+      Attack: ("123xMultiplicador")
+    }
+  }
+  const Personagens = new Discord.MessageEmbed()
+  .setTitle("Personagem 1 e Personagem 2")
+  .setDescription("Status base.")
+  .addFields(
+    {name: "HP P1", value: (teste.Personagem1.HP), inline: true},
+    {name: "HP P2", value: (teste.Personagem2.HP), inline: true},
+    {name: "ATK P1", value: (teste.Personagem1.Attack), inline: true},
+    {name: "ATK P2", value: (teste.Personagem2.Attack), inline: true},
+  )
+  if(comando === "status") {
+    message.channel.send (Personagens)
+  }
 }
 });
 client.login(BOT_TOKEN);
