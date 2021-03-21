@@ -408,7 +408,7 @@ const arraydeeplef = [
     message.channel.send (fg)
   }
   let Total = 0
-if(message.content == 'jogo ruim'){
+if(message.content == 'hello'){
     Total += 1
     if(Total > 5){
         message.reply('Concordo, esse jogo realmente é bem ruim.')
