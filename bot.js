@@ -33,6 +33,11 @@ client.on("message", async message => {
   
       return item;
   }
+  function getRandomInt(min, max) {
+    min = Math.ceil(1);
+    max = Math.floor(101);
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const comando = args.shift().toLowerCase();
   const arrayjerma = [
@@ -407,23 +412,8 @@ const arraydeeplef = [
   if(comando === "fg") {
     message.channel.send (fg)
   }
-  let Total1 = 0
-  if(message.content == 'jogo ruim'){
-    Total1 = +1
-  if(Total1 = +5){
-        message.channel.send('Concordo, esse jogo realmente é bem ruim.')
-    }
-
-  const teste = {
-    Personagem1: {
-      HP: ("42"),
-      Attack: ("162xMultiplicador")
-    },
-    Personagem2: {
-      HP: ("67"),
-      Attack: ("123xMultiplicador")
-    }
+  if(comando === "gay") {
+    message.channel.send (`${user.username} **é`, getRandomInt,`% homossexual!**`)
   }
-}
 });
 client.login(BOT_TOKEN);
