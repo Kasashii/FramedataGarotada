@@ -410,10 +410,8 @@ const arraydeeplef = [
   let Total = 0
 if(message.content == 'jogo ruim'){
     Total += 1
-    if(Total > 5){
+    if(Total = 5){
         message.channel.send('Concordo, esse jogo realmente é bem ruim.')
-     }else{
-         message.channel.send('Ah cara, vai tomar no cu esse jogo na moral.')
     }
 }
 });
