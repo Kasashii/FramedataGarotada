@@ -416,8 +416,28 @@ client.on("message", async message => {
   if(comando === "garotada") {
     message.channel.send (`${message.mentions.users.first()} **é ${randomnumber}% parte da Garotada!**`)
   }
-  if(comando === "amigo") {
-    message.channel.send (`${message.author.username} **é ${randomnumber}% amigo de** ${message.mentions.users.first()}!`)
-  }
+  module.exports = {
+    name: "amigo",
+    run: async (bot, message, args) => {
+        if (!args[0]) return message.channel.send("Você esqueceu de marcar o seu amigo!")
+        if (!args[1]) return message.channel.send("Você precisa marcar alguém para ser seu amigo!")
+ 
+        if (args[0] || args[1]) {
+            var FirstUser = message.mentions.members.first() || message.guild.members.cache.get(args[0])
+            var SecondUser = message.mentions.members.first(-1) || message.guild.members.cache.get(args[1])
+ 
+            if (!FirstUser) return message.channel.send(`Eu não encontrei ninguém chamado **${args[0]}**!`)
+            if (!SecondUser) return message.channel.send(`Eu não consegui encontrar ninguém chamado **${args[1]}**!`)
+ 
+            if (FirstUser || SecondUser) {
+                const FirstUserSliced = FirstUser.user.username.slice(0, FirstUser.user.username.length / 2)
+                const SecondUserSliced = SecondUser.map(user => { return user.user.username.slice(user.user.username.length / 2) })
+                const SecondUserName = SecondUser.map(user => { return user.user.username })
+ 
+                message.channel.send(`${FirstUser.user.username} **é ${randomnumber} amigo de** ${SecondUserName}**!!** = `)
+            }
+        }
+    }
+}
 });
 client.login(BOT_TOKEN);
