@@ -433,5 +433,15 @@ client.on("message", async message => {
   if(comando === "torneio") {
     message.channel.send (torneiogarotada)
   }
+  
+  let Total = 0
+if(message.content == 'hello'){
+    Total += 1
+    if(Total > 10){
+        message.reply('go away')
+     }else{
+         message.reply('hello')
+    }
+}
 });
 client.login(BOT_TOKEN);
