@@ -417,7 +417,7 @@ client.on("message", async message => {
     message.channel.send (`${message.mentions.users.first()} **é ${randomnumber}% parte da Garotada!**`)
   }
   if(comando === "amigo") {
-    message.channel.send (`${message.author.username} **é ${randomnumber}% amigo de** ${message.mentions.users.first}**!!!**`)
+    message.channel.send (`${message.author.username} **é ${randomnumber}% amigo de** ${message.mentions.users.first()}**!!!**`)
   }
   const challongegarotada = ("https://challonge.com/pt_BR/communities/lobbydagarotada")
   if(comando === "challonge") {
