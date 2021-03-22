@@ -383,7 +383,7 @@ client.on("message", async message => {
     message.channel.send (eliza)
   }
   if(comando === "ajuda") {
-    message.channel.send ("```COMANDOS DA GAROTADA```\n**ADICIONADOS NO ÚLTIMO DEPLOY!**\n`g!may`\n`g!fg`\n**INÚTEIS/FUN**\n`g!noticia`\n`g!ikki`\n`g!parabens`\n`g!1000horas/g!milhoras`\n`g!cLK`\n`g!smh`\n`g!inteligente`\n`g!neutral`\n`g!deeplef`\n`g!jerma`\n**GAROTADA ISSUES**\n`g!aulas`\n`g!mains`\n`g!leaderboard`\n`g!csk OU g!combosuki`\n`g!audios`")
+    message.channel.send ("```COMANDOS DA GAROTADA```\n**ADICIONADOS NO ÚLTIMO DEPLOY!**\n`g!amigo`\n`g!garotada`\n`g!challonge`\n`g!torneio`\n**INÚTEIS/FUN**\n`g!may`\n`g!fg`\n`g!noticia`\n`g!ikki`\n`g!parabens`\n`g!1000horas/g!milhoras`\n`g!cLK`\n`g!smh`\n`g!inteligente`\n`g!neutral`\n`g!deeplef`\n`g!jerma`\n**GAROTADA ISSUES**\n`g!aulas`\n`g!mains`\n`g!leaderboard`\n`g!csk OU g!combosuki`\n`g!audios`")
   }
   const aula1 = ("https://youtu.be/5wM0jqrGa0w")
   if(comando === "aula1") {
@@ -418,6 +418,20 @@ client.on("message", async message => {
   }
   if(comando === "amigo") {
     message.channel.send (`${message.author.username} **é ${randomnumber}% amigo de** ${message.mentions.users.first}**!!!**`)
+  }
+  const challongegarotada = ("https://challonge.com/pt_BR/communities/lobbydagarotada")
+  if(comando === "challonge") {
+    message.channel.send ("```CHALLONGE DA GAROTADA!```")
+  }
+  if(comando === "challonge") {
+    message.channel.send (challongegarotada)
+  }
+  const torneiogarotada = ("https://challonge.com/3rmxd21e")
+  if(comando === "torneio") {
+    message.channel.send ("```LINK DO TORNEIO DA GAROTADA DESTA SEMANA!```")
+  }
+  if(comando === "torneio") {
+    message.channel.send (torneiogarotada)
   }
 });
 client.login(BOT_TOKEN);
