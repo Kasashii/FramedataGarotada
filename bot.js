@@ -38,6 +38,9 @@ client.on("message", async message => {
     max = Math.floor(101);
     return Math.floor(Math.random() * (max - min)) + min;
   }
+  if (comando === "teste") {
+    message.channel.send (getRandomInt)
+  }
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const comando = args.shift().toLowerCase();
   const arrayjerma = [
