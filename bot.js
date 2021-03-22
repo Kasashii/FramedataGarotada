@@ -33,14 +33,6 @@ client.on("message", async message => {
   
       return item;
   }
-  function getRandomInt(min, max) {
-    min = Math.ceil(1);
-    max = Math.floor(101);
-    return Math.floor(Math.random() * (max - min)) + min;
-  }
-  if (comando === "teste") {
-    message.channel.send (getRandomInt)
-  }
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const comando = args.shift().toLowerCase();
   const arrayjerma = [
@@ -414,10 +406,6 @@ const arraydeeplef = [
   const fg = ("https://clips.twitch.tv/AbstemiousMistyPelicanPrimeMe")
   if(comando === "fg") {
     message.channel.send (fg)
-  }
-  const xisde = (getRandomInt)
-  if(comando === "gay") {
-    message.channel.send (`${message.mentions.users.first()} **é ${xisde}% gay... Podem zoar ele, garotada!**`)
   }
 });
 client.login(BOT_TOKEN);
