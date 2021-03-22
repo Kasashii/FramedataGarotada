@@ -21,15 +21,7 @@ client.on("message", async message => {
 
     if(message.author.bot) return;
     if(message.channel.type === "dm") return;
-    if(!message.content.startsWith(config.prefix)) return;  
-    let profile = await leveling.Fetch(message.author.id);
-    leveling.AddXp(message.author.id, 15);
-
-    if(profile.xp + 15 > 1500){
-      leveling.AddLevel(message.author.id, 1)
-      leveling.SetXp(message.author.id, 0)
-      message.channel.send(`Parabéns, ${message.author.username}! Você agora é garotada nível ${profile.level + 1}!`)
-    }
+    if(!message.content.startsWith(config.prefix)) return;  ;
    function getRandomItem(arr) {
 
      
@@ -440,6 +432,5 @@ client.on("message", async message => {
   if(comando === "torneio") {
     message.channel.send (torneiogarotada)
   }
-  const leveling = require('discord-leveling');
 });
 client.login(BOT_TOKEN);
