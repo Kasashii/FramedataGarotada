@@ -414,7 +414,10 @@ client.on("message", async message => {
     message.channel.send (fg)
   }
   if(comando === "garotada") {
-    message.channel.send (`${message.mentions.users.first()} é ${randomnumber}% parte da garotada!`)
+    message.channel.send (`${message.mentions.users.first()} **é ${randomnumber}% parte da Garotada!**`)
+  }
+  if(comando === "amigo") {
+    message.channel.send (`${message.mentions.author} **é ${randomnumber}% amigo de** ${message.mentions.users.first()}!`)
   }
 });
 client.login(BOT_TOKEN);
