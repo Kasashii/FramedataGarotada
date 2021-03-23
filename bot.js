@@ -431,7 +431,7 @@ client.on("message", async message => {
     message.channel.send (`${message.mentions.users.first()} **é ${randomnumber}% based!!**`)
   }
   if(comando === "based @Shieda#3010") {
-    message.channel.send (`${message.mentions.users.first()} **é ${randomnumber}% based!!**`)
+    message.channel.send (`${message.mentions.users.first()} **cara, tu ainda tenta? shieda é -100% velho**`)
   }
   const challongegarotada = ("https://challonge.com/pt_BR/communities/lobbydagarotada")
   if(comando === "challonge") {
