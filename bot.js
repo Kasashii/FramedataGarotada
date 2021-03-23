@@ -449,32 +449,28 @@ client.on("message", async message => {
     message.channel.send (torneiogarotada)
   }
   if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${message.mentions.users.first}`)
+    message.channel.send (`Pediram pra te marcar... ${user}`)
   }
   if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${message.mentions.users.first}`)
-  }  
-  if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${message.mentions.users.first}`)
+    message.channel.send (`Pediram pra te marcar... ${user}`)
   }
   if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${message.mentions.users.first}`)
+    message.channel.send (`Pediram pra te marcar... ${user}`)
   }
   if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${message.mentions.users.first}`)
-  }  
-  if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${message.mentions.users.first}`)
+    message.channel.send (`Pediram pra te marcar... ${user}`)
   }
   if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${message.mentions.users.first}`)
+    message.channel.send (`Pediram pra te marcar... ${user}`)
   }
   if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${message.mentions.users.first}`)
-  }  
-  if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${message.mentions.users.first}`)
+    message.channel.send (`Pediram pra te marcar... ${user}`)
   }
-        
+  if(comando === "mention") {
+    message.channel.send (`Pediram pra te marcar... ${user}`)
+  }
+  if(comando === "mention") {
+    message.channel.send (`Pediram pra te marcar... ${user}`)
+  }
 });
 client.login(BOT_TOKEN);
