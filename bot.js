@@ -419,7 +419,7 @@ client.on("message", async message => {
     message.channel.send (`${user.username}} **é ${randomnumber}% parte da Garotada!**`)
   }
   if(comando === "vitima") {
-    message.channel.send (`${user.username} **É ${randomnumber}% VÍTIMA!**`)
+    message.channel.send (`${user.username} **É ${randomnumber}% VÍTIMA!!**`)
   }
   if(comando === "inimigo") {
     message.channel.send (`${message.author.username} **É ${randomnumber}% INIMIGO DE ${user.username}!!!!**`)
