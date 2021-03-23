@@ -385,7 +385,7 @@ client.on("message", async message => {
     message.channel.send (eliza)
   }
   if(comando === "ajuda") {
-    message.channel.send ("```COMANDOS DA GAROTADA```\n**ADICIONADOS NO ÚLTIMO DEPLOY!**\n`g!amigo`\n`g!garotada`\n`g!challonge`\n`g!torneio`\n**INÚTEIS/FUN**\n`g!may`\n`g!fg`\n`g!noticia`\n`g!ikki`\n`g!parabens`\n`g!1000horas/g!milhoras`\n`g!cLK`\n`g!smh`\n`g!inteligente`\n`g!neutral`\n`g!deeplef`\n`g!jerma`\n**GAROTADA ISSUES**\n`g!aulas`\n`g!mains`\n`g!leaderboard`\n`g!csk OU g!combosuki`\n`g!audios`")
+    message.channel.send ("```COMANDOS DA GAROTADA```\n**ADICIONADOS NO ÚLTIMO DEPLOY!**\n`g!vitima`\n**INÚTEIS/FUN**\n`g!amigo`\n`g!garotada`\n`g!challonge`\n`g!torneio`\n`g!may`\n`g!fg`\n`g!noticia`\n`g!ikki`\n`g!parabens`\n`g!1000horas/g!milhoras`\n`g!cLK`\n`g!smh`\n`g!inteligente`\n`g!neutral`\n`g!deeplef`\n`g!jerma`\n**GAROTADA ISSUES**\n`g!aulas`\n`g!mains`\n`g!leaderboard`\n`g!csk OU g!combosuki`\n`g!audios`")
   }
   const aula1 = ("https://youtu.be/5wM0jqrGa0w")
   if(comando === "aula1") {
@@ -417,6 +417,9 @@ client.on("message", async message => {
   }
   if(comando === "garotada") {
     message.channel.send (`${message.mentions.users.first()} **é ${randomnumber}% parte da Garotada!**`)
+  }
+  if(comando === "vitima") {
+    message.channel.send (`${message.mentions.users.first()} **É ${randomnumber}% VÍTIMA!**`)
   }
   if(comando === "amigo") {
     message.channel.send (`${message.author.username} **é ${randomnumber}% amigo de** ${message.mentions.users.first()}**!!!**`)
