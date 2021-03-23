@@ -416,22 +416,23 @@ client.on("message", async message => {
     message.channel.send (fg)
   }
   if(comando === "garotada") {
-    message.channel.send (`${message.mentions.users.first()} **é ${randomnumber}% parte da Garotada!**`)
+    message.channel.send (`${user.username}} **é ${randomnumber}% parte da Garotada!**`)
   }
   if(comando === "vitima") {
-    message.channel.send (`${message.mentions.users.first()} **É ${randomnumber}% VÍTIMA!**`)
+    message.channel.send (`${user.username} **É ${randomnumber}% VÍTIMA!**`)
   }
   if(comando === "inimigo") {
-    message.channel.send (`${message.author.username} **É ${randomnumber}% INIMIGO DE ${message.mentions.users.first()}!!!!**`)
+    message.channel.send (`${message.author.username} **É ${randomnumber}% INIMIGO DE ${user.username}!!!!**`)
   }
+  let user = message.mentions.users.first()
   if(comando === "amigo") {
-    message.channel.send (`${message.author.username} **é ${randomnumber}% amigo de** ${message.mentions.users.first()}**!!!**`)
+    message.channel.send (`${message.author.username} **é ${randomnumber}% amigo de** ${user.username}**!!!**`)
   }
   if(comando === "based") {
-    message.channel.send (`${message.mentions.users.first()} **é ${randomnumber}% based!!**`)
+    message.channel.send (`${user.username} **é ${randomnumber}% based!!**`)
   }
   if(comando === "based @Shieda#3010") {
-    message.channel.send (`${message.mentions.users.first()} **cara, tu ainda tenta? shieda é -100% velho**`)
+    message.channel.send (`${user.username} **cara, tu ainda tenta? shieda é -100% velho**`)
   }
   const challongegarotada = ("https://challonge.com/pt_BR/communities/lobbydagarotada")
   if(comando === "challonge") {
