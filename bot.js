@@ -427,6 +427,12 @@ client.on("message", async message => {
   if(comando === "amigo") {
     message.channel.send (`${message.author.username} **é ${randomnumber}% amigo de** ${message.mentions.users.first()}**!!!**`)
   }
+  if(comando === "based") {
+    message.channel.send (`${message.mentions.users.first()} **é ${randomnumber}% based!!**`)
+  }
+  if(comando === "based @Shieda#3010") {
+    message.channel.send (`${message.mentions.users.first()} **é ${randomnumber}% based!!**`)
+  }
   const challongegarotada = ("https://challonge.com/pt_BR/communities/lobbydagarotada")
   if(comando === "challonge") {
     message.channel.send ("```CHALLONGE DA GAROTADA!```")
