@@ -421,8 +421,8 @@ client.on("message", async message => {
   if(comando === "vitima") {
     message.channel.send (`${message.mentions.users.first()} **É ${randomnumber}% VÍTIMA!**`)
   }
-  if(comando === "vam") {
-    message.channel.send (`${message.mentions.users.first()} **É ${randomnumber}% AMIGO DE VAM!**`)
+  if(comando === "inimigo") {
+    message.channel.send (`${message.author.username} **É ${randomnumber}% INIMIGO DE ${message.mentions.users.first()}!!!!**`)
   }
   if(comando === "amigo") {
     message.channel.send (`${message.author.username} **é ${randomnumber}% amigo de** ${message.mentions.users.first()}**!!!**`)
