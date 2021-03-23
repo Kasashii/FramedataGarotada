@@ -448,23 +448,5 @@ client.on("message", async message => {
   if(comando === "torneio") {
     message.channel.send (torneiogarotada)
   }
-  if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${user}`)
-  }
-  if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${user}`)
-  }
-  if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${user}`)
-  }
-  if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${user}`)
-  }
-  if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${user}`)
-  }
-  if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${user}`)
-  }
 });
 client.login(BOT_TOKEN);
