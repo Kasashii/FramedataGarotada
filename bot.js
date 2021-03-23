@@ -466,11 +466,5 @@ client.on("message", async message => {
   if(comando === "mention") {
     message.channel.send (`Pediram pra te marcar... ${user}`)
   }
-  if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${user}`)
-  }
-  if(comando === "mention") {
-    message.channel.send (`Pediram pra te marcar... ${user}`)
-  }
 });
 client.login(BOT_TOKEN);
