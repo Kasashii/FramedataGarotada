@@ -37,7 +37,11 @@ client.on("message", async message => {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
   }
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+
+  const args = message.content
+  .slice(prefix.length)
+  .trim()
+  .split(/ +/g);
   const comando = args.shift().toLowerCase();
   const arrayjerma = [
     {files: [`./jerma/jerma.png`]},
@@ -366,7 +370,9 @@ client.on("message", async message => {
   if(comando === "mains_alone") {
     message.channel.send ("```MAINS DA GAROTADA!!!```\n> `Jogador:` **Alone**\n> `Sets:` *N/A.*\n> `Rank:` *N/A.*\n> `Winrate:` *N/A.*\n========================\n> `Jogo:` **3S**\n> `Personagem:` *Hugo.*\n========================\n> `Jogo:` **BBCF**\n> `Personagem:` *Izayoi.*\n========================\n> `Jogo:` **Dengeki**\n> `Personagem:` *Mikoto.*\n> `Assist/Burst:` *N/A / N/A.*\n========================\n> `Jogo:` **Guilty gear +R**\n> `Personagem:`  *Jam.*\n========================\n> `Jogo:` **Skullgirls**\n> `Personagens:`  *MissFortune, Filia.*")
   }
-  if(comando === "mains_kas") {
+  const people1 = "kas"
+  if(comando === `mains ${people1}`) {
+    let people1 = args[0]
     message.channel.send ("```MAINS DA GAROTADA!!!```\n> `Jogador:` **Kasashi**\n> `Sets:` *27/50.*\n> `Rank:` *6th.*\n> `Winrate:` *35%.*\n========================\n> `Jogo:` **3S**\n> `Personagem:` *Ibuki.*\n========================\n> `Jogo:` **BBCF**\n> `Personagem:` *Naoto Kurogane.*\n========================\n> `Jogo:` **Dengeki**\n> `Personagem:` *Rentaro.*\n> `Assist/Burst:` *Sadao Maou/Izaya.*\n========================\n> `Jogo:` **EFZ**\n> `Personagem:` *Mai.*\n========================\n> `Jogo:` **Guilty gear +R**\n> `Personagem:`  *Bridget.*\n========================\n> `Jogo:` **Jojo**\n> `Personagem:` *Mariah.*\n========================\n> `Jogo:` **Melty**\n> `Personagem:` *Len/Vakiha.*\n> `Moon:` *Half/Full.*\n========================\n> `Jogo:` **Monster**\n> `Personagem:` *Maya.*\n========================\n> `Jogo:` **Skullgirls**\n>  `Personagens:`  *Valentine, Squigly, Cerebella.*\n========================\n> `Jogo:` **TFH**\n> `Personagem:` *Velvet.*\n========================\n> `Jogo:` **Touhou**\n> `Personagem:` *Alice.*\n========================\n> `Jogo:` **Vampire Savior**\n> `Personagem:` *Felicia.*")
   }
   if(comando === "mains") {
