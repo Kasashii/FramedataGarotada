@@ -451,10 +451,10 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   if(comando === "torneio") {
     message.channel.send (torneiogarotada)
   }
-  if(comando === "memesex") {
+  if(comando === "memex") {
     message.channel.send ("https://cdn.discordapp.com/attachments/724807845731631105/828659898543243376/unknown.png")
   }
-  if(comando === "memes") {
+  if(comando === "meme") {
     message.channel.send ("https://cdn.discordapp.com/attachments/724807845731631105/828660358859587654/unknown.png")
   }
 });
