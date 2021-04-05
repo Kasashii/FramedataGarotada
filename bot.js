@@ -457,5 +457,8 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   if(comando === "meme") {
     message.channel.send ("https://cdn.discordapp.com/attachments/724807845731631105/828660358859587654/unknown.png")
   }
+  if(comando === "ghostkid") {
+    message.channel.send ({files: [`./audios/GhostKid.mp3`]});
+  }
 });
 client.login(BOT_TOKEN);
