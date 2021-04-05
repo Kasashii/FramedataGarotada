@@ -452,7 +452,7 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     message.channel.send (torneiogarotada)
   }
   if(comando === "memex") {
-    message.channel.send ("https://cdn.discordapp.com/attachments/724807845731631105/828659898543243376/unknown.png")
+    message.channel.send ("https://cdn.discordapp.com/attachments/772262752340934670/828660434407653386/Screenshot_6.png")
   }
   if(comando === "meme") {
     message.channel.send ("https://cdn.discordapp.com/attachments/724807845731631105/828660358859587654/unknown.png")
