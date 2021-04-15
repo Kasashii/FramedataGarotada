@@ -460,5 +460,8 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   if(comando === "ghostkid") {
     message.channel.send ({files: [`./audios/GhostKid.mp3`]});
   }
+  if(comando === "athylia") {
+    message.channel.send ("https://cdn.discordapp.com/attachments/823669979802239067/832386544786604072/unknown.png")
+  }
 });
 client.login(BOT_TOKEN);
