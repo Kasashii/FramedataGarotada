@@ -463,5 +463,11 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   if(comando === "athylia") {
     message.channel.send ("https://cdn.discordapp.com/attachments/823669979802239067/832386544786604072/unknown.png");
   }
+  if(comando === "pros") {
+    message.channel.send ("https://cdn.discordapp.com/attachments/793260217420873749/832402416229154866/LDG_SO_Q_PNG.png");
+  }
+  if(comando === "cons") {
+    message.channel.send ("https://cdn.discordapp.com/attachments/793260217420873749/832403620103716864/kasashi_so_q_png.png");
+  }
 });
 client.login(BOT_TOKEN);
