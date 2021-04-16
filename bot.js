@@ -478,5 +478,11 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   if(comando === `tea`) {
     message.channel.send ({files:[`./gifs/oolongtea.mp4`]});
   }
+  if(comando === `water`) {
+    message.channel.send ({files:[`./gifs/water.mp4`]});
+  }
+  if(comando === `water_ex`) {
+    message.channel.send ({files:[`./gifs/waterex.mp4`]});
+  }
 });
 client.login(BOT_TOKEN);
