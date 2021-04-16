@@ -469,5 +469,14 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   if(comando === "cons") {
     message.channel.send ("https://cdn.discordapp.com/attachments/793260217420873749/832403620103716864/kasashi_so_q_png.png");
   }
+  if(comando === `oolong`) {
+    message.channel.send ({files:[`./gifs/oolongtea.mp4`]});
+  }
+  if(comando === `oolong_tea`) {
+    message.channel.send ({files:[`./gifs/oolongtea.mp4`]});
+  }
+  if(comando === `tea`) {
+    message.channel.send ({files:[`./gifs/oolongtea.mp4`]});
+  }
 });
 client.login(BOT_TOKEN);
