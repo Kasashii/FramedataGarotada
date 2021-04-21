@@ -93,6 +93,15 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     (deep16),
     (deep17)
   ]
+  const athylia1 = ("https://media.discordapp.net/attachments/823669979802239067/832386544786604072/unknown.png")
+  const athylia2 = ("https://media.discordapp.net/attachments/823669979802239067/834459604380287056/unknown.png")
+  const athylia3 = ("https://media.discordapp.net/attachments/823669979802239067/834459604380287056/unknown.png")
+  const arrayathylia = [
+    (athylia1),
+    (athylia2),
+    (athylia3)
+  ]
+  const resultathylia = getRandomItem(arrayathylia)
   const resultdeeplef = getRandomItem(arraydeeplef)
   const resultjerma = getRandomItem(arrayjerma)
   const randomnumber = getRandomInt(1,101)
@@ -461,7 +470,7 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     message.channel.send ({files: [`./audios/GhostKid.mp3`]});
   }
   if(comando === "athylia") {
-    message.channel.send ("https://cdn.discordapp.com/attachments/823669979802239067/832386544786604072/unknown.png");
+    message.channel.send (resultathylia);
   }
   if(comando === "pros") {
     message.channel.send ("https://cdn.discordapp.com/attachments/793260217420873749/832402416229154866/LDG_SO_Q_PNG.png");
