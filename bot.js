@@ -509,5 +509,8 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   if (comando === "drip") {
     message.channel.send ("https://media.discordapp.net/attachments/772262752340934670/833328507929100298/army_furro_drip_mas_agora_sem_fundo.png?width=391&height=559")
   };
+  if (comando === "loser") {
+    message.channel.send ("https://youtu.be/un2jJaiuwMI")
+  }
 });
 client.login(BOT_TOKEN);
