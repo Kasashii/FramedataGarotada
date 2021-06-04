@@ -519,5 +519,8 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   if (comando === "loser") {
     message.channel.send ("https://youtu.be/un2jJaiuwMI")
   }
+  if (comando === "lab") {
+    message.channel.send ("https://cdn.discordapp.com/attachments/772273045229928488/850447814165004298/2021-06-04_15-54-35.mp4")
+  }
 });
 client.login(BOT_TOKEN);
