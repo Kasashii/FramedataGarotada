@@ -522,5 +522,11 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   if (comando === "lab") {
     message.channel.send ("https://cdn.discordapp.com/attachments/772273045229928488/850447814165004298/2021-06-04_15-54-35.mp4")
   }
+  if (comando === "rank") {
+    message.channel.send ("https://images-ext-1.discordapp.net/external/hKmFtcOG--QFc0tnVQOjRatK6qpiKyxHxbDdo00RH0E/https/i.imgur.com/cNtjKmH.png?width=812&height=585")
+  }
+    if (comando === "request") {
+    message.channel.send ("@M🏹#9923 se liga ai ^")
+  }
 });
 client.login(BOT_TOKEN);
