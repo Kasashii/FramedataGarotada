@@ -528,5 +528,8 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     if (comando === "request") {
     message.channel.send ("<@611315038451662868> se liga ai ^")
   }
+  if (comando === "paunocudojyuna") {
+    message.channel.send ("Pau no cu do Jyuna")
+  }
 });
 client.login(BOT_TOKEN);
