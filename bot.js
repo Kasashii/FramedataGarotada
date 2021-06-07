@@ -526,7 +526,7 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     message.channel.send ("https://images-ext-1.discordapp.net/external/hKmFtcOG--QFc0tnVQOjRatK6qpiKyxHxbDdo00RH0E/https/i.imgur.com/cNtjKmH.png?width=812&height=585")
   }
     if (comando === "request") {
-    message.channel.send ("@kasashi#9923 se liga ai ^")
-  }s
+    message.channel.send ("<@611315038451662868> se liga ai ^")
+  }
 });
 client.login(BOT_TOKEN);
