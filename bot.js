@@ -54,7 +54,8 @@ client.on("message", async message => {
     {files: [`./jerma/jerma13.gif`]},
     {files: [`./jerma/jerma14.gif`]}
   ]
- const deep1 = ("https://twitter.com/DeepLeffen/status/1371913555067437064?s=20")
+const user = getUserFromMention(args[0]);
+const deep1 = ("https://twitter.com/DeepLeffen/status/1371913555067437064?s=20")
  const deep2 = ("https://twitter.com/DeepLeffen/status/1369702619627851783?s=20")
  const deep3 = ("https://twitter.com/DeepLeffen/status/1369318200576520203?s=20")
  const deep4 = ("https://twitter.com/DeepLeffen/status/1368980838499647494?s=20")
@@ -556,12 +557,11 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
       msg.react(':thumbsdown:')
     })
   }
-    if (comando === 'mute') {
-  const user = getUserFromMention(args[0]);
-          message.channel.send(`Votação de mute do usuário **${user.tag}**.`).then(msg => {
-            msg.react('👍');
-            msg.react('👎')
-          })
+  if (comando === 'mute') {
+    message.channel.send(`Votação de mute do usuário **${user.tag}**.`).then(msg => {
+        msg.react('👍');
+         msg.react('👎')
+    })
     }
 });
 client.login(BOT_TOKEN);
