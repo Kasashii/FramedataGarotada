@@ -558,7 +558,7 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     })
   }
   if (comando === 'mute') {
-    message.channel.send(`Votação de mute do usuário **${user.tag}**.`).then(msg => {
+    message.channel.send(`Votação de mute do usuário.`).then(msg => {
         msg.react('👍');
          msg.react('👎')
     })
