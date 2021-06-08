@@ -551,7 +551,10 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     message.channel.send ("Maldito\n    ╔═╦╗╔╦═╦═╦══╗\n    ║═╣║║║╔╣╔╣╔╗║\n    ║╔╣╚╝║║║║║╚╝║\n    ╚╝╚══╩╝╚╝╚══╝\n    disgraçado")
   }
   if(comando === "racista") {
-    message.channel.send ("https://media.discordapp.net/attachments/367409081117573121/851860113803182090/unknown.png ratio")
+    message.channel.send ("https://media.discordapp.net/attachments/367409081117573121/851860113803182090/unknown.png ||ratio||")
+  }
+  if(comando === "mute") {
+    message.channel.send ("O usuário merece/mereceu o mute? ||ratio||")
   }
 });
 client.login(BOT_TOKEN);
