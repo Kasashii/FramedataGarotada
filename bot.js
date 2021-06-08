@@ -552,16 +552,26 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   }
   if(comando === "racista") {
     message.channel.send ("https://media.discordapp.net/attachments/367409081117573121/851860113803182090/unknown.png").then(msg => {
-      msg.react(':thumbsup:')
-      msg.react(':thumbsdown:')
-    })
-  }
-  if(comando === "mute") {
-    message.channel.send ("Votação de mute para o usuário em questão:").then(msg => {
       msg.react('👍')
       msg.react('👎')
     })
-    if (comando == 'pfp') {
+    if (comando === 'mute') {
+      if (args.length < 2) {
+        return message.reply('Por favor, diga um motivo para a votação ter começado e/ou a duração do mute.');
+      }
+  
+      const user = getUserFromMention(args[0]);
+      if (!user) {
+        return message.reply('Por favor, mencione a pessoa a ser julgada.');
+      }
+  
+      const reason = args.slice(1).join(' ');
+      return message.channel.send(`Votação de mute do usuário **${user.tag}**.`).then(msg => {
+        msg.react('👍')
+        msg.react('👎')
+      })
+    }
+    if (comando === 'pfp') {
       if (args[0]) {
         const user = getUserFromMention(args[0]);
         if (!user) {
