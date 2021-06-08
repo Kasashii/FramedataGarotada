@@ -558,14 +558,10 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   }
     if (comando === 'mute') {
   const user = getUserFromMention(args[0]);
-      if (!user) {
-        return message.reply('Por favor, mencione a pessoa a ser julgada.').then(msg => {
           message.channel.send(`Votação de mute do usuário **${user.tag}**.`).then(msg => {
             msg.react('👍');
             msg.react('👎')
           })
-        })
-      }
     }
 });
 client.login(BOT_TOKEN);
