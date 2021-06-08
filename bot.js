@@ -553,8 +553,9 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   if(comando === "racista") {
     message.channel.send ("https://media.discordapp.net/attachments/367409081117573121/851860113803182090/unknown.png").then(msg => {
       msg.react('👍')
-      msg.react('👎')
+      msg.react(':thumbsdown:')
     })
+  }
     if (comando === 'mute') {
       if (args.length < 2) {
         return message.reply('Por favor, diga um motivo para a votação ter começado e/ou a duração do mute.');
@@ -572,17 +573,20 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
       })
     }
     if (comando === 'pfp') {
-      if (args[0]) {
-        const user = getUserFromMention(args[0]);
-        if (!user) {
-          return message.reply('Tu tem que marcar alguém pra obter a pfp dessa pessoa..');
-        }
-  
-        return message.channel.send(`${user.username} pfp da pessoa: ${user.displayAvatarURL({ dynamic: true })}`);
-      }
-  
-      return message.channel.send(`${message.author.username} pfp: ${message.author.displayAvatarURL({ dynamic: true })}`);
+      exports.run = async (client, message, args) => {
+
+        let user = message.mentions.users.first() || client.users.cache.get(args[0]) || message.author;
+        
+        let avatar = user.avatarURL({ dynamic: true, format: "png", size: 1024 });
+      
+        let embed = new Discord.MessageEmbed() 
+          .setColor(`#00000`) 
+          .setTitle(`Avatar de ${user.username}`) 
+          .setImage(avatar) 
+          .setFooter(`• Autor: ${message.author.tag}`, message.author.displayAvatarURL({format: "png"}));
+       await message.channel.send(embed); 
+      
+      };
     }
-  }
 });
 client.login(BOT_TOKEN);
