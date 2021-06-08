@@ -121,6 +121,19 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     (athylia12), 
     (athylia13),
   ]
+  const amogus = ("https://media.discordapp.net/attachments/833196889885114368/851858266030866472/FB_IMG_1622034683939.jpg?width=555&height=584")
+  const amogus1 = ("https://cdn.discordapp.com/attachments/833196889885114368/851858768110288906/image0-22.png")
+  const amogus2 = ("https://cdn.discordapp.com/attachments/833196889885114368/851858768371515432/unknown-13.png")
+  const amogus3 = ("╔███████╗║██░░░░░██╗╔███████╗\n  ║██╔════╝║██░░░░░██║║██╔════╝\n  ║███████╗║██░░░░░██║║███████╗\n  ╚═════██║║██░░░░░██║╚═════██║\n  ╔███████║║█████████║║███████║\n  ╚═══════╝╚═════════╝╚═══════╝")
+  const amogus4 = ("https://cdn.discordapp.com/attachments/833196889885114368/851858768782426112/20210225_094149.jpg")
+  const arrayamogus = [
+    (amogus),
+    (amogus1),
+    (amogus2),
+    (amogus3),
+    (amogus4),
+  ]
+  const resultamogus = getRandomItem(arrayamogus)
   const resultathylia = getRandomItem(arrayathylia)
   const resultdeeplef = getRandomItem(arraydeeplef)
   const resultjerma = getRandomItem(arrayjerma)
@@ -530,6 +543,12 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   }
   if (comando === "paunocudojyuna") {
     message.channel.send ("Pau no cu do Jyuna")
+  }
+  if (comando === "sus") {
+    message.channel.send (resultamogus)
+  }
+  if (comando === "furro") {
+    message.channel.send ("Maldito\n    ╔═╦╗╔╦═╦═╦══╗\n    ║═╣║║║╔╣╔╣╔╗║\n    ║╔╣╚╝║║║║║╚╝║\n    ╚╝╚══╩╝╚╝╚══╝\n    disgraçado")
   }
 });
 client.login(BOT_TOKEN);
