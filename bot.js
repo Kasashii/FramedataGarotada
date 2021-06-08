@@ -557,11 +557,7 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     })
   }
     if (comando === 'mute') {
-      if (args.length < 2) {
-        return message.reply('Por favor, diga um motivo para a votação ter começado e/ou a duração do mute.');
-      }
-  
-      const user = getUserFromMention(args[0]);
+  const user = getUserFromMention(args[0]);
       if (!user) {
         return message.reply('Por favor, mencione a pessoa a ser julgada.').then(msg => {
           message.channel.send(`Votação de mute do usuário **${user.tag}**.`).then(msg => {
@@ -570,24 +566,6 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
           })
         })
       }
-  
-      const reason = args.slice(1).join(' ');
-    }
-    if (comando === 'pfp') {
-      exports.run = async (client, message, args) => {
-
-        let user = message.mentions.users.first() || client.users.cache.get(args[0]) || message.author;
-        
-        let avatar = user.avatarURL({ dynamic: true, format: "png", size: 1024 });
-      
-        let embed = new Discord.MessageEmbed() 
-          .setColor(`#00000`) 
-          .setTitle(`Avatar de ${user.username}`) 
-          .setImage(avatar) 
-          .setFooter(`• Autor: ${message.author.tag}`, message.author.displayAvatarURL({format: "png"}));
-       await message.channel.send(embed); 
-      
-      };
     }
 });
 client.login(BOT_TOKEN);
