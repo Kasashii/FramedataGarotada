@@ -542,13 +542,16 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     message.channel.send ("<@611315038451662868> se liga ai ^")
   }
   if (comando === "paunocudojyuna") {
-    message.channel.send ("Pau no cu do Jyuna")
+    message.channel.send (":middle_finger: :rage: :middle_finger:PAU NO CU DO JYUNA!! :middle_finger: :rage: :middle_finger:")
   }
   if (comando === "sus") {
     message.channel.send (resultamogus)
   }
   if (comando === "furro") {
     message.channel.send ("Maldito\n    ╔═╦╗╔╦═╦═╦══╗\n    ║═╣║║║╔╣╔╣╔╗║\n    ║╔╣╚╝║║║║║╚╝║\n    ╚╝╚══╩╝╚╝╚══╝\n    disgraçado")
+  }
+  if(comando === "racista") {
+    message.channel.send ("https://media.discordapp.net/attachments/367409081117573121/851860113803182090/unknown.png ratio")
   }
 });
 client.login(BOT_TOKEN);
