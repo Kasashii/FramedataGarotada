@@ -563,14 +563,15 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   
       const user = getUserFromMention(args[0]);
       if (!user) {
-        return message.reply('Por favor, mencione a pessoa a ser julgada.');
+        return message.reply('Por favor, mencione a pessoa a ser julgada.').then(msg => {
+          message.channel.send(`Votação de mute do usuário **${user.tag}**.`).then(msg => {
+            msg.react('👍');
+            msg.react('👎')
+          })
+        })
       }
   
       const reason = args.slice(1).join(' ');
-      return message.channel.send(`Votação de mute do usuário **${user.tag}**.`).then(msg => {
-        msg.react('👍')
-        msg.react('👎')
-      })
     }
     if (comando === 'pfp') {
       exports.run = async (client, message, args) => {
