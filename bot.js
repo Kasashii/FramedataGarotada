@@ -557,9 +557,9 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     })
   }
   if(comando === "mute") {
-    message.channel.send ("O usuário merece/mereceu o mute?").then(msg => {
-      msg.react(':thumbsup:')
-      msg.react(':thumbsdown:')
+    message.channel.send ("Votação de mute para o usuário em questão:").then(msg => {
+      msg.react('<:thumbsup:>')
+      msg.react('<:thumbsdown:>')
     })
   }
 });
