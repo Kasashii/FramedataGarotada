@@ -552,14 +552,14 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   }
   if(comando === "racista") {
     message.channel.send ("https://media.discordapp.net/attachments/367409081117573121/851860113803182090/unknown.png").then(msg => {
-      msg.react(':thumbsup:')
-      msg.react(':thumbsdown:')
+      msg.react('👎')
+      msg.react('👎')
     })
   }
   if(comando === "mute") {
     message.channel.send ("Votação de mute para o usuário em questão:").then(msg => {
-      msg.react('<:thumbsup:>')
-      msg.react('<:thumbsdown:>')
+      msg.react('👍')
+      msg.react('👎')
     })
   }
 });
