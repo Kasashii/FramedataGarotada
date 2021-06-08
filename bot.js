@@ -54,8 +54,7 @@ client.on("message", async message => {
     {files: [`./jerma/jerma13.gif`]},
     {files: [`./jerma/jerma14.gif`]}
   ]
-const user = getUserFromMention(args[0]);
-const deep1 = ("https://twitter.com/DeepLeffen/status/1371913555067437064?s=20")
+ const deep1 = ("https://twitter.com/DeepLeffen/status/1371913555067437064?s=20")
  const deep2 = ("https://twitter.com/DeepLeffen/status/1369702619627851783?s=20")
  const deep3 = ("https://twitter.com/DeepLeffen/status/1369318200576520203?s=20")
  const deep4 = ("https://twitter.com/DeepLeffen/status/1368980838499647494?s=20")
@@ -122,19 +121,6 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     (athylia12), 
     (athylia13),
   ]
-  const amogus = ("https://media.discordapp.net/attachments/833196889885114368/851858266030866472/FB_IMG_1622034683939.jpg?width=555&height=584")
-  const amogus1 = ("https://cdn.discordapp.com/attachments/833196889885114368/851858768110288906/image0-22.png")
-  const amogus2 = ("https://cdn.discordapp.com/attachments/833196889885114368/851858768371515432/unknown-13.png")
-  const amogus3 = ("╔███████╗║██░░░░░██╗╔███████╗\n  ║██╔════╝║██░░░░░██║║██╔════╝\n  ║███████╗║██░░░░░██║║███████╗\n  ╚═════██║║██░░░░░██║╚═════██║\n  ╔███████║║█████████║║███████║\n  ╚═══════╝╚═════════╝╚═══════╝")
-  const amogus4 = ("https://cdn.discordapp.com/attachments/833196889885114368/851858768782426112/20210225_094149.jpg")
-  const arrayamogus = [
-    (amogus),
-    (amogus1),
-    (amogus2),
-    (amogus3),
-    (amogus4),
-  ]
-  const resultamogus = getRandomItem(arrayamogus)
   const resultathylia = getRandomItem(arrayathylia)
   const resultdeeplef = getRandomItem(arraydeeplef)
   const resultjerma = getRandomItem(arrayjerma)
@@ -543,25 +529,7 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     message.channel.send ("<@611315038451662868> se liga ai ^")
   }
   if (comando === "paunocudojyuna") {
-    message.channel.send (":middle_finger: :rage: :middle_finger:PAU NO CU DO JYUNA!! :middle_finger: :rage: :middle_finger:")
+    message.channel.send ("Pau no cu do Jyuna")
   }
-  if (comando === "sus") {
-    message.channel.send (resultamogus)
-  }
-  if (comando === "furro") {
-    message.channel.send ("Maldito\n    ╔═╦╗╔╦═╦═╦══╗\n    ║═╣║║║╔╣╔╣╔╗║\n    ║╔╣╚╝║║║║║╚╝║\n    ╚╝╚══╩╝╚╝╚══╝\n    disgraçado")
-  }
-  if(comando === "racista") {
-    message.channel.send ("https://media.discordapp.net/attachments/367409081117573121/851860113803182090/unknown.png").then(msg => {
-      msg.react('👍')
-      msg.react(':thumbsdown:')
-    })
-  }
-  if (comando === 'mute') {
-    message.channel.send(`Votação de mute do usuário.`).then(msg => {
-        msg.react('👍');
-         msg.react('👎')
-    })
-    }
 });
 client.login(BOT_TOKEN);
