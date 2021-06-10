@@ -106,6 +106,9 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   const athylia11 =("https://cdn.discordapp.com/attachments/772262752340934670/834935265642020904/athyliabelike.mp4")
   const athylia12 =("https://cdn.discordapp.com/attachments/772262752340934670/834935265642020904/athyliabelike.mp4")
   const athylia13 =("https://steamuserimages-a.akamaihd.net/ugc/272847314896601122/07DAE5EEFB4C07BDA8D6F9074984B68A49BC1D57/")
+  const athylia14 =("https://steamuserimages-a.akamaihd.net/ugc/272847314896601122/07DAE5EEFB4C07BDA8D6F9074984B68A49BC1D57/")
+  const athylia15 =("https://cdn.discordapp.com/attachments/187846760251654144/850786149144461322/annihilation.mp4")
+  const athylia16 =("https://cdn.discordapp.com/attachments/187846760251654144/850786149144461322/annihilation.mp4")
   const arrayathylia = [
     (athylia1),
     (athylia2),
@@ -120,6 +123,9 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     (athylia11),
     (athylia12), 
     (athylia13),
+    (athylia14), 
+    (athylia15),
+    (athylia16),
   ]
   const resultathylia = getRandomItem(arrayathylia)
   const resultdeeplef = getRandomItem(arraydeeplef)
