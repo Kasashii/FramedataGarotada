@@ -598,7 +598,7 @@ const arrayquestions = [
     message.channel.send ("https://cdn.discordapp.com/attachments/772273045229928488/850447814165004298/2021-06-04_15-54-35.mp4")
   }
   if (comando === "rank") {
-    message.channel.send ("https://images-ext-1.discordapp.net/external/hKmFtcOG--QFc0tnVQOjRatK6qpiKyxHxbDdo00RH0E/https/i.imgur.com/cNtjKmH.png?width=812&height=585")
+    message.channel.send ("https://media.discordapp.net/attachments/772273045229928488/853684645401329712/ZJeGhkc.png?width=562&height=585")
   }
     if (comando === "request") {
     message.channel.send ("<@611315038451662868> se liga ai ^")
