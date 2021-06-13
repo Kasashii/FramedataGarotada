@@ -126,7 +126,76 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
     (athylia14), 
     (athylia15),
     (athylia16),
-  ]
+  ] 
+const q1 = ("What was the last funny video you saw?")
+const q2 = ("What do you do to get rid of stress?")
+const q3 = ("What three words best describe you?")
+const q4 = ("What would be your perfect weekend?")
+const q5 = ("What’s the most useful thing you own?")
+const q6 = ("What’s your favorite way to waste time?")
+const q7 = ("Do you have any pets? What are their names?")
+const q8 = ("Are you very active, or do you prefer to just relax in your free time?")
+const q9 = ("What do you do when you hang out with your friends?")
+const q10 =("Who is your oldest friend? Where did you meet them?")
+const q11 =("What do you fear is hiding in the dark?")
+const q12 =("What is the silliest fear you have?")
+const q13 =("What are some things you want to accomplish before you die?")
+const q14 =("If u have a wish, what was that?")
+const q15 =("What weird or useless talent do you have?")
+const q16 =("If you had intro music, what song would it be? Why?")
+const q17 = ("What is the strangest dream you have ever had?")
+const q18 = ("What is the most annoying habit someone can have?")
+const q19 = ("What is the most disgusting habit some people have?")
+const q20 = ("If You Could Erase One Event From History, Which One Would You Erase?")
+const q21 = ("Where is the worst place you have been stuck for a long time?")
+const q22 = ("What’s your favorite way to waste time?")
+const q23 = ("How should success be measured? And by that measurement, who is the most successful person you know, following you ask?")
+const q24 = ("If you had to change your name, what would your new name be?")
+const q25 = ("If you could learn the answer to one question about your future, what would the question be?")
+const q26 =("What’s the size of your shoes?")
+const q27 =("What two languages would you like to be fluent in?")
+const q28 =("If someone wrote a biography about you, what do you think the title should be?")
+const q29 =("What is be happy to you?")
+const q30 =("What’s the meaning of life in your opinion?")
+const q31 =("If you could trade lives with anyone for a day who would it be and why?")
+const q32 =("Last thing you bought?")
+const q33 =("What is the funniest fg clip have ever seen?")
+const arrayquestions = [
+  (q1),
+  (q2),
+  (q3),
+  (q4),
+  (q5),
+  (q6),
+  (q7),
+  (q8),
+  (q9),
+  (q10),
+  (q11),
+  (q12),
+  (q13),
+  (q14),
+  (q15),
+  (q16),
+  (q17),
+  (q18),
+  (q19),
+  (q20),
+  (q21),
+  (q22),
+  (q23),
+  (q24),
+  (q25),
+  (q26),
+  (q27),
+  (q28),
+  (q29),
+  (q30),
+  (q31),
+  (q32),
+  (q33),
+]
+  const resultq = getRandomItem(arrayquestions)
   const resultathylia = getRandomItem(arrayathylia)
   const resultdeeplef = getRandomItem(arraydeeplef)
   const resultjerma = getRandomItem(arrayjerma)
@@ -536,6 +605,9 @@ const shiny = ("https://cdn.discordapp.com/attachments/772262752340934670/822540
   }
   if (comando === "paunocudojyuna") {
     message.channel.send ("Pau no cu do Jyuna")
+  }
+  if(comando === "topic") {
+    message.channel.send (resultq)
   }
 });
 client.login(BOT_TOKEN);
