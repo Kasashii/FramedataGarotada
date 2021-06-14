@@ -611,5 +611,8 @@ const arrayquestions = [
   if(comando === "topic") {
     message.channel.send (resultq)
   }
+  if(comando === "neutro") {
+    message.channel.send ("https://cdn.discordapp.com/attachments/782771452540878888/854008894669455400/2021-06-13_23-59-23.mp4")
+  }
 });
 client.login(BOT_TOKEN);
