@@ -160,6 +160,7 @@ const q30 =("What’s the meaning of life in your opinion?")
 const q31 =("If you could trade lives with anyone for a day who would it be and why?")
 const q32 =("Last thing you bought?")
 const q33 =("What is the funniest fg clip have ever seen?")
+const q34 =("What is you favorite FG character?")
 const arrayquestions = [
   (q1),
   (q2),
@@ -194,6 +195,7 @@ const arrayquestions = [
   (q31),
   (q32),
   (q33),
+  (q34),
 ]
   const resultq = getRandomItem(arrayquestions)
   const resultathylia = getRandomItem(arrayathylia)
