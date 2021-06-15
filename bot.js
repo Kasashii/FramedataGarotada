@@ -540,10 +540,10 @@ const arrayquestions = [
     message.channel.send (`${user.username} **é ${randomnumber} sua vítima.**`)
   }
   if(comando === "garotada") {
-    message.channel.send (`${user.username} **é ${randomnumber} coomer.**`)
+    message.channel.send (`${user.username} **é ${randomnumber} garotada.**`)
   }
   if(comando === "coomer") {
-    message.channel.send (`${user.username} **é ${randomnumber} garotada.**`)
+    message.channel.send (`${ user.username} **é ${randomnumber} coomer.**`)
   }
   const challongegarotada = ("https://challonge.com/pt_BR/communities/lobbydagarotada")
   if(comando === "challonge") {
