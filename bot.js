@@ -542,8 +542,14 @@ const arrayquestions = [
   if(comando === "based") {
     message.channel.send (`${user.username} **é ${randomnumber}% based!!**`)
   }
-  if(comando === "based @Shieda#3010") {
-    message.channel.send (`${user.username} **cara, tu ainda tenta? shieda é -100% velho**`)
+  if(comando === "vitima") {
+    message.channel.send (`${user.username} **é ${randomnumber} sua vítima.**`)
+  }
+  if(comando === "garotada") {
+    message.channel.send (`${user.username} **é ${randomnumber} coomer.**`)
+  }
+  if(comando === "coomer") {
+    message.channel.send (`${user.username} **é ${randomnumber} garotada.**`)
   }
   const challongegarotada = ("https://challonge.com/pt_BR/communities/lobbydagarotada")
   if(comando === "challonge") {
