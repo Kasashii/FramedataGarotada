@@ -526,12 +526,6 @@ const arrayquestions = [
   if(comando === "fg") {
     message.channel.send (fg)
   }
-  if(comando === "garotada") {
-    message.channel.send (`${user.username}} **é ${randomnumber}% parte da Garotada!**`)
-  }
-  if(comando === "vitima") {
-    message.channel.send (`${user.username} **É ${randomnumber}% VÍTIMA!!**`)
-  }
   if(comando === "inimigo") {
     message.channel.send (`${message.author.username} **É ${randomnumber}% INIMIGO DE ${user.username}!!!!**`)
   }
