@@ -161,7 +161,7 @@ const q31 =("If you could trade lives with anyone for a day who would it be and 
 const q32 =("Last thing you bought?")
 const q33 =("What is the funniest fg clip have ever seen?")
 const q34 =("What is you favorite FG character?")
-const q35 =("what is the most cringe thing than you do in you life?")
+const q35 =("What is the cringey thing you did in your life?")
 const arrayquestions = [
   (q1),
   (q2),
