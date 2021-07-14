@@ -6,7 +6,6 @@ const config = require("./config.json");
 
 const dotenv = require('dotenv');
 
-
 if(process.env.NODE_ENV !== 'production')
     dotenv.config();
     
@@ -616,5 +615,36 @@ const arrayquestions = [
   if(comando === "neutro") {
     message.channel.send ("https://cdn.discordapp.com/attachments/782771452540878888/854008894669455400/2021-06-13_23-59-23.mp4")
   }
+
+let parasoul = [
+    {p1:"jLP", dmg:110, tipo: "aéreo"},
+    {p1:"sLP", dmg:120, tipo: "em pé"},
+]
+let fukua = [
+    {p:"jLP", dmg:210, tipo: "aéreo"},
+    {p:"sLP", dmg:20, tipo: "em pé"},
+]
+let personagens = [
+    parasoul,
+    fukua
+]
+
+ if (aliases.includes(comando)) {
+   const PERSONAGEM = args[0];
+
+   personagens.map(obj => {
+         if (PERSONAGEM.toLowerCase() == obj.parasoul, obj.fukua) {
+             Message(obj.dmg, obj.tipo)
+         } else {
+             return;
+         }
+   })
+ } else {
+   msg.channel.send("Não reconheço esse comando")  
+ }
+
+ function Message(dmg, tipo) {
+     msg.channel.send(dmg, tipo)
+ }
 });
 client.login(BOT_TOKEN);
