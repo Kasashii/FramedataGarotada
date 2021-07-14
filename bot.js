@@ -616,29 +616,33 @@ const arrayquestions = [
     message.channel.send ("https://cdn.discordapp.com/attachments/782771452540878888/854008894669455400/2021-06-13_23-59-23.mp4")
   }
 
-var bigband = [
-    {charname: bigband, move: jMP, startup: 11},
-    {charname: bigband, move: jHK, startup: 16},
+var BigBand = {
+  move : { jMP: 11, jHK: 16 },
+  charName : "BigBand"
+}
+
+var Parasoul = {
+  move : { jMP : 12, jHK : 19 },
+  charName : "Parasoul" 
+}
+
+var AliPar = [
+  "para",
+  "par",
+  "parasoul",
+  "pa",
+  "paras",
+  "paraso",
+  "parasou"
 ]
-var Parasoul = [
-  {charname: parasoul, move: jMP, startup: 12},
-  {charname: Parasoul, move: jHK, startup: 19},
+  
+var AliBand = [
+  "big",
+  "bb",
+  "bigb",
+  "bigband"
 ]
-  var AliPar = [
-    "Para",
-    "Par",
-    "Parasoul",
-    "Pa",
-    "Paras",
-    "Paraso",
-    "Parasou"
-  ]
-  var AliBand = [
-    "Big",
-    "BB",
-    "Bigb",
-    "BigBand"
-  ]
+
   if(comando == "frame") {
     if(args[0] == "frame") {
       var fChoose;
