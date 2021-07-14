@@ -665,6 +665,10 @@ var AliBand = [
           break;
         }
       }
+      message.channel.send(`${sChoose}`)
+    } else {
+        message.channel.send ("Ocorreu algum erro, não foi possível executar o seu comando.")
+     }
   }
-}});
+});
 client.login(BOT_TOKEN);
