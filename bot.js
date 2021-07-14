@@ -653,7 +653,7 @@ var Parasoul = [
       case 'jMP' : sChoose = fChoose.move, ",", fChoose.startup;
       case "jHK" : sChoose = fChoose.move, ",", fChoose.startup;
     }
-    message.channel.send [$(sChoose)]
+    message.channel.send(`${sChoose}`)
 } else {
     message.channel.send ("Ocorreu algum erro, não foi possível executar o seu comando.")
  }
