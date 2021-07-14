@@ -639,7 +639,9 @@ var Parasoul = [
     "Bigb",
     "BigBand"
   ]
-  if(comando === "frame" (b1) (b2)) {
+  if(comando === "frame") {
+    let b1 = args[0];
+    let b2 = args[1];
     var fChoose;
     var sChoose;
 
@@ -652,8 +654,8 @@ var Parasoul = [
       case "jHK" : sChoose = fChoose.move, ",", fChoose.startup;
     }
     message.channel.send [$(sChoose)]
-  } else {
+} else {
     message.channel.send ("Ocorreu algum erro, não foi possível executar o seu comando.")
-  }
+ }
 });
 client.login(BOT_TOKEN);
