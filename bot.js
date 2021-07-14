@@ -615,5 +615,43 @@ const arrayquestions = [
   if(comando === "neutro") {
     message.channel.send ("https://cdn.discordapp.com/attachments/782771452540878888/854008894669455400/2021-06-13_23-59-23.mp4")
   }
+
+var BigBand = [
+    {charname: BigBand, move: jMP, startup: 11},
+    {charname: BigBand, move: jHK, startup: 16},
+]
+var Parasoul = [
+  {charname: Parasoul, move: jMP, startup: 12},
+  {charname: Parasoul, move: jHK, startup: 19},
+]
+  var AliPar = [
+    "Para",
+    "Par",
+    "Parasoul",
+    "Pa",
+    "Paras",
+    "Paraso",
+    "Parasou"
+  ]
+  var AliBand = [
+    "Big",
+    "BB",
+    "Bigb",
+    "BigBand"
+  ]
+  if(comando === "frame" (b1) (b2)) {
+    var fChoose;
+    var sChoose;
+
+    switch(b1) {
+      case $(AliPar) : fChoose = Parasoul; break;
+      case $(AliBand) : fChoose = BigBand; break;
+    }
+    switch(b2) {
+      case 'jMP' : sChoose = fChoose.move, ",", fChoose.startup;
+      case "jHK" : sChoose = fChoose.move, ",", fChoose.startup;
+    }
+    message.channel.send [$(sChoose)]
+  }
 });
 client.login(BOT_TOKEN);
