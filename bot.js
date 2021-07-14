@@ -646,8 +646,8 @@ var Parasoul = [
     var sChoose;
 
     switch(b1) {
-      case $(AliPar) : fChoose = Parasoul; break;
-      case $(AliBand) : fChoose = BigBand; break;
+      case "Parasoul" : fChoose = Parasoul; break;
+      case "BigBand" : fChoose = BigBand; break;
     }
     switch(b2) {
       case 'jMP' : sChoose = fChoose.move, ",", fChoose.startup;
