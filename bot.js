@@ -616,6 +616,15 @@ const arrayquestions = [
     message.channel.send ("https://cdn.discordapp.com/attachments/782771452540878888/854008894669455400/2021-06-13_23-59-23.mp4")
   }
 
+  if(comando === "teste") {
+    if (!args[0]) {
+      return msg.channel.send("argumento 0  não encontrado")
+    }
+    if (!args[1]) {
+      return msg.channel.send("argumento 1  não encontrado")
+    }
+      }
+  
   var BigBand = {
     move : { jMP: 11, jHK: 16 },
     charName : "BigBand"
@@ -671,7 +680,7 @@ const arrayquestions = [
     message.channel.send(`${sChoose}`)
   } else {
     message.channel.send("tem algo de errado com o seu comando, revise e tente novamente.")
-  }
+  } 
   }
 });
 client.login(BOT_TOKEN);
