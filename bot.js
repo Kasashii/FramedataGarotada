@@ -652,11 +652,7 @@ const arrayquestions = [
   if(comando == "frame") {
   var fChoose;
   var sChoose;
-  
-  if(args[0] == "frame") {
-    var fChoose;
-    var sChoose;
-  
+
    if(AliPar.includes(args[1])) {
      fChoose = Parasoul;
    } else if (AliBand.includes(args[1])) {
@@ -678,6 +674,6 @@ const arrayquestions = [
   } else {
     message.channel.send("tem algo de errado com o seu comando, revise e tente novamente.")
   } 
-  }
+  
 });
 client.login(BOT_TOKEN);
