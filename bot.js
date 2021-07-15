@@ -632,7 +632,8 @@ const arrayquestions = [
     charName : "Parasoul" 
   }
   if(comando === "teste"){
-    message.channel.send(Parasoul.move.jMP)
+    const stringteste = Parasoul.move.jMP
+    message.channel.send(stringteste)
   }
 
   var AliPar = [
