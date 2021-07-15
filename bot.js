@@ -631,7 +631,10 @@ const arrayquestions = [
     move : { jMP : 12, jHK : 19 },
     charName : "Parasoul" 
   }
-  
+  if(comando === "teste"){
+    message.channel.send(`${Parasoul.move.jMP}`)
+  }
+
   var AliPar = [
     "para",
     "par",
