@@ -644,7 +644,6 @@ var AliBand = [
 ]
 
   if(comando == "frame") {
-    if(args[0] == "frame") {
       var fChoose;
       var sChoose;
     
@@ -666,7 +665,6 @@ var AliBand = [
         }
       }
       message.channel.send(`${sChoose}`)
-    }
   }
 });
 client.login(BOT_TOKEN);
