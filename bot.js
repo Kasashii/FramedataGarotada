@@ -619,9 +619,13 @@ const arrayquestions = [
   if(comando === "teste") {
     if (!args[0]) {
       return msg.channel.send("argumento 0  não encontrado")
+    } else {
+      msg.channel.send("Argumento 0 encontrado!")
     }
     if (!args[1]) {
       return msg.channel.send("argumento 1  não encontrado")
+    } else {
+      msg.channel.send("Argumento 1 encontrado!")
     }
       }
   
