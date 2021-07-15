@@ -631,8 +631,8 @@ const arrayquestions = [
     move : { jMP : "12", jHK : "19" },
     charName : "Parasoul" 
   }
+  const stringteste = Parasoul.move.jMP
   if(comando === "teste"){
-    const stringteste = Parasoul.move.jMP
     message.channel.send(stringteste)
   }
 
