@@ -653,13 +653,12 @@ const arrayquestions = [
   var fChoose;
   var sChoose;
 
-   if(args[0].includes(AliPar)) {
+   if(args[1].includes(AliPar)) {
      fChoose = Parasoul;
-   } else if (args[0].includes(AliBand)) {
+   } else if (args[1].includes(AliBand)) {
      fChoose = BigBand;
    }
-  
-    switch(args[1]) {
+      switch(args[2]) {
       case "jmp" : {
         var temp = "jMP -> ";
         sChoose = temp.concat(fChoose.move.jMP);
