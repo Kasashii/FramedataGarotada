@@ -623,16 +623,16 @@ const arrayquestions = [
   const log1 = console.log(args[1])
   
   var BigBand = {
-    move : { jMP: 11, jHK: 16 },
+    move : { jMP: "11", jHK: "16" },
     charName : "BigBand"
   }
   
   var Parasoul = {
-    move : { jMP : 12, jHK : 19 },
+    move : { jMP : "12", jHK : "19" },
     charName : "Parasoul" 
   }
   if(comando === "teste"){
-    message.channel.send(`${Parasoul.move.jMP}`)
+    message.channel.send(Parasoul.move.jMP)
   }
 
   var AliPar = [
