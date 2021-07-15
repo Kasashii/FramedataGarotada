@@ -653,9 +653,9 @@ const arrayquestions = [
   var fChoose;
   var sChoose;
 
-   if(AliPar.includes(args[1])) {
+   if(fChoose.includes(AliPar)) {
      fChoose = Parasoul;
-   } else if (AliBand.includes(args[1])) {
+   } else if (AliBand.includes(AliBand)) {
      fChoose = BigBand;
    }
   
@@ -674,6 +674,5 @@ const arrayquestions = [
   } else {
     message.channel.send("tem algo de errado com o seu comando, revise e tente novamente.")
   } 
-  
 });
 client.login(BOT_TOKEN);
