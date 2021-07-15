@@ -644,27 +644,29 @@ var AliBand = [
 ]
 
   if(comando == "frame") {
-      var fChoose;
-      var sChoose;
-    
-     if(AliPar.includes(args[1])) {
-       fChoose = Parasoul;
-     } else if (AliBand.includes(args[1])) {
-       fChoose = BigBand;
-     }
-    
-      switch(args[2]) {
-        case "jmp" : {
-          var temp = "jMP -> ";
-          sChoose = temp.concat(fChoose.move.jMP);
-          break;
-        }
-        case "jhk" : {
-          sChoose = "jHK -> ".concat(fChoose.move.jHK);
-          break;
-        }
+  var fChoose;
+  var sChoose;
+  
+  if(AliPar.includes(args[1])) {
+     fChoose = Parasoul;
+   } else if (AliBand.includes(args[1])) {
+     fChoose = BigBand;
+   }
+  
+   switch(args[2]) {
+      case "jmp" : {
+        var temp = "jMP -> ";
+        sChoose = temp.concat(fChoose.move.jMP);
+        break;
       }
-      message.channel.send(`${sChoose}`)
+      case "jhk" : {
+        sChoose = "jHK -> ".concat(fChoose.move.jHK);
+        break;
+      }
+    }
+    message.channel.send(`${sChoose}`)
+  } else {
+    message.channel.send("tem algo de errado com o seu comando, revise e tente novamente.")
   }
 });
 client.login(BOT_TOKEN);
