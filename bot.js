@@ -616,44 +616,48 @@ const arrayquestions = [
     message.channel.send ("https://cdn.discordapp.com/attachments/782771452540878888/854008894669455400/2021-06-13_23-59-23.mp4")
   }
 
-var BigBand = {
-  move : {jMP: 11,jHK: 16 },
-  charName : "BigBand"
-}
-
-var Parasoul = {
-  move : {jMP : 12,jHK : 19 },
-  charName : "Parasoul" 
-}
-
-var AliPar = [
-  "para",
-  "par",
-  "parasoul",
-  "pa",
-  "paras",
-  "paraso",
-  "parasou"
-]
+  var BigBand = {
+    move : { jMP: 11, jHK: 16 },
+    charName : "BigBand"
+  }
   
-var AliBand = [
-  "big",
-  "bb",
-  "bigb",
-  "bigband"
-]
-
+  var Parasoul = {
+    move : { jMP : 12, jHK : 19 },
+    charName : "Parasoul" 
+  }
+  
+  var AliPar = [
+    "para",
+    "par",
+    "parasoul",
+    "pa",
+    "paras",
+    "paraso",
+    "parasou"
+  ]
+    
+  var AliBand = [
+    "big",
+    "bb",
+    "bigb",
+    "bigband"
+  ]
+  
   if(comando == "frame") {
   var fChoose;
   var sChoose;
   
-  if(AliPar.includes(args[1])) {
+  if(args[0] == "frame") {
+    var fChoose;
+    var sChoose;
+  
+   if(AliPar.includes(args[1])) {
      fChoose = Parasoul;
    } else if (AliBand.includes(args[1])) {
      fChoose = BigBand;
    }
   
-   switch(args[2]) {
+    switch(args[2]) {
       case "jmp" : {
         var temp = "jMP -> ";
         sChoose = temp.concat(fChoose.move.jMP);
@@ -667,6 +671,7 @@ var AliBand = [
     message.channel.send(`${sChoose}`)
   } else {
     message.channel.send("tem algo de errado com o seu comando, revise e tente novamente.")
+  }
   }
 });
 client.login(BOT_TOKEN);
