@@ -649,8 +649,8 @@ const arrayquestions = [
   ]
   
   if(comando == "frame") {
-    const fChoose;
-    const sChoose;
+    let fChoose;
+    let sChoose;
     
     if(AliPar.includes(args[1])) {
        fChoose = Parasoul;
