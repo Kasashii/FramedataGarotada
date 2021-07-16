@@ -648,27 +648,12 @@ const arrayquestions = [
     "bigband"
   ]
   
-  if(comando == "frame") {
+  if(comando == `frame ${fChoose} ${sChoose}`) {
     let fChoose;
     let sChoose;
-    
-    if(AliPar.includes(args[1])) {
-       fChoose = Parasoul;
-     } else if (AliBand.includes(args[1])) {
-       fChoose = BigBand;
-     }
-    
-     switch(args[2]) {
-        case "jmp" : {
-          sChoose = ("fChoose.move.jMP");
-          break;
-        }
-        case "jhk" : {
-          sChoose = ("fChoose.move.jHK");
-          break;
-        }
-      }
-      message.channel.send(`${sChoose}`)
+      result = fChoose.move.sChoose
+      message.channel.send(`${result}`)
+      message.channel.send(`teste`)
     }
 });
 client.login(BOT_TOKEN);
