@@ -649,8 +649,8 @@ const arrayquestions = [
   ]
   
   if(comando == "frame") {
-    const fChoose;
-    const sChoose;
+    let fChoose;
+    let sChoose;
     
     if(AliPar.includes(args[1])) {
        fChoose = Parasoul;
@@ -660,12 +660,11 @@ const arrayquestions = [
     
      switch(args[2]) {
         case "jmp" : {
-          const temp = "jMP -> ";
-          sChoose = temp.concat(fChoose.move.jMP);
+          sChoose = ("fChoose.move.jMP");
           break;
         }
         case "jhk" : {
-          sChoose = "jHK -> ".concat(fChoose.move.jHK);
+          sChoose = ("fChoose.move.jHK");
           break;
         }
       }
