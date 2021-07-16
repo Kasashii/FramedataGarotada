@@ -620,12 +620,10 @@ const arrayquestions = [
     move : { jMP: "11", jHK: "16" },
     charName : "BigBand"
   }
-  
   const Parasoul = {
     move : { jMP : "12", jHK : "19" },
     charName : "Parasoul" 
   }
-
   const AliPar = [
     "para",
     "par",
@@ -635,12 +633,34 @@ const arrayquestions = [
     "paraso",
     "parasou"
   ]
-    
   const AliBand = [
     "big",
     "bb",
     "bigb",
     "bigband"
   ]
+  if(comando == "frame") {
+    let fChoose;
+    let sChoose;
+  
+    if(AliPar.includes(args[1])) {
+       fChoose = Parasoul;
+     } else if (AliBand.includes(args[1])) {
+       fChoose = BigBand;
+     }
+    
+     switch(args[2]) {
+        case "jmp" : {
+          const temp = "jMP -> ";
+          sChoose = temp.concat(fChoose.move.jMP);
+          break;
+        }
+        case "jhk" : {
+          sChoose = "jHK -> ".concat(fChoose.move.jHK);
+          break;
+        }
+      }
+      message.channel.send(`${sChoose}`)
+    }
 });
 client.login(BOT_TOKEN);
