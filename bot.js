@@ -616,12 +616,6 @@ const arrayquestions = [
     message.channel.send ("https://cdn.discordapp.com/attachments/782771452540878888/854008894669455400/2021-06-13_23-59-23.mp4")
   }
 
-  if(comando === "teste") {
-    message.channel.send(`${log0}, ${log1}`)
-  }
-  const log0 = console.log(args[0])
-  const log1 = console.log(args[1])
-  
   const BigBand = {
     move : { jMP: "11", jHK: "16" },
     charName : "BigBand"
