@@ -625,11 +625,6 @@ const arrayquestions = [
     move : { jMP : "12", jHK : "19" },
     charName : "Parasoul" 
   }
-  const stringteste = Parasoul.move.jMP
-  if(comando === "teste"){
-    message.channel.send (stringteste)
-    message.channel.send ("teste1")
-  }
 
   const AliPar = [
     "para",
@@ -647,13 +642,38 @@ const arrayquestions = [
     "bigb",
     "bigband"
   ]
+
+  const jMP = [
+    "jMP",
+    "jmp"
+  ]
+
+  const jHK = [
+    "jHK",
+    "jhk"
+  ]
   
   if(comando == `frame ${fChoose} ${sChoose}`) {
-    let fChoose;
-    let sChoose;
-      result = fChoose.move.sChoose
-      message.channel.send(`${result}`)
-      message.channel.send(`teste`)
+    const fChoose;
+    const sChoose;
+    if(AliPar.includes(fChoose)) {
+      fChoose = `${Parasoul}`
+      break;
+    } else if (AliBand.includes(fChoose)) {
+      fChoose = `${BigBand}`
+      break;
+    }
+
+    if(jMP.includes(jMP)) {
+      sChoose = `${jMP}`
+      break;
+    } else if (jHK.includes(jHK)) {
+      sChoose = `${jHK}`
+      break;
+    }
+    result = fChoose.move.sChoose  
+    message.channel.send(`${result}`)
+    message.channel.send(`teste`)
     }
 });
 client.login(BOT_TOKEN);
