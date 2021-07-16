@@ -622,12 +622,12 @@ const arrayquestions = [
   const log0 = console.log(args[0])
   const log1 = console.log(args[1])
   
-  var BigBand = {
+  const BigBand = {
     move : { jMP: "11", jHK: "16" },
     charName : "BigBand"
   }
   
-  var Parasoul = {
+  const Parasoul = {
     move : { jMP : "12", jHK : "19" },
     charName : "Parasoul" 
   }
@@ -637,7 +637,7 @@ const arrayquestions = [
     message.channel.send ("teste1")
   }
 
-  var AliPar = [
+  let AliPar = [
     "para",
     "par",
     "parasoul",
@@ -647,7 +647,7 @@ const arrayquestions = [
     "parasou"
   ]
     
-  var AliBand = [
+  let AliBand = [
     "big",
     "bb",
     "bigb",
@@ -655,28 +655,27 @@ const arrayquestions = [
   ]
   
   if(comando == "frame") {
-  var fChoose;
-  var sChoose;
-
-   if(args[1].includes(AliPar)) {
-     fChoose = Parasoul;
-   } else if (args[1].includes(AliBand)) {
-     fChoose = BigBand;
-   }
-      switch(args[2]) {
-      case "jmp" : {
-        var temp = "jMP -> ";
-        sChoose = temp.concat(fChoose.move.jMP);
-        break;
+    var fChoose;
+    var sChoose;
+    
+    if(AliPar.includes(args[1])) {
+       fChoose = Parasoul;
+     } else if (AliBand.includes(args[1])) {
+       fChoose = BigBand;
+     }
+    
+     switch(args[2]) {
+        case "jmp" : {
+          var temp = "jMP -> ";
+          sChoose = temp.concat(fChoose.move.jMP);
+          break;
+        }
+        case "jhk" : {
+          sChoose = "jHK -> ".concat(fChoose.move.jHK);
+          break;
+        }
       }
-      case "jhk" : {
-        sChoose = "jHK -> ".concat(fChoose.move.jHK);
-        break;
-      }
+      message.channel.send(`${sChoose}`)
     }
-    message.channel.send(`${sChoose}`)
-  } else {
-    message.channel.send("tem algo de errado com o seu comando, revise e tente novamente.")
-  } 
 });
 client.login(BOT_TOKEN);
