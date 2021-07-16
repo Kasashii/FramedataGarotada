@@ -631,7 +631,7 @@ const arrayquestions = [
     message.channel.send ("teste1")
   }
 
-  let AliPar = [
+  const AliPar = [
     "para",
     "par",
     "parasoul",
@@ -641,7 +641,7 @@ const arrayquestions = [
     "parasou"
   ]
     
-  let AliBand = [
+  const AliBand = [
     "big",
     "bb",
     "bigb",
