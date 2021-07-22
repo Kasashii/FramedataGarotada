@@ -487,13 +487,6 @@ const arrayquestions = [
   if(comando === "clk") {
     message.channel.send (crounchinglightkick)
   }
-  const eliza = ("https://media.discordapp.net/attachments/772273045229928488/822254671347449906/unknown.png")
-  if(comando === "1000horas") {
-    message.channel.send (eliza)
-  }
-  if(comando === "milhoras") {
-    message.channel.send (eliza)
-  }
   if(comando === "ajuda") {
     message.channel.send ("```COMANDOS DA GAROTADA```\n**ADICIONADOS NO ÚLTIMO DEPLOY!**\n`g!ajuda`\n**INÚTEIS/FUN**\n`g!amigo`\n`g!garotada`\n`g!challonge`\n`g!torneio`\n`g!may`\n`g!fg`\n`g!noticia`\n`g!ikki`\n`g!parabens`\n`g!1000horas/g!milhoras`\n`g!cLK`\n`g!smh`\n`g!inteligente`\n`g!neutral`\n`g!deeplef`\n`g!jerma`\n**GAROTADA ISSUES**\n`g!aulas`\n`g!mains`\n`g!leaderboard`\n`g!csk OU g!combosuki`\n`g!audios`")
   }
@@ -509,7 +502,7 @@ const arrayquestions = [
     message.channel.send ("```Aulas que o Loch deu!```\n`g!aula1`\n`g!aula2`")
   }
   if(comando === "ikki") {
-    message.channel.send ("tudo o sucesso dos caras é pelo Ikki, eu acho q Ikki teria q ser nosso novo pilar, Ikki fiz mais q o Noaa pela comunidade, Ikki fiz mais q o Lugon pela comunidade, Ikki é o verdadeiro coraçao de Brasil, obrigado Ikki, obrigado Lobby da Garotada  ;p ;p")
+    message.channel.send ("tudo o sucesso dos caras é pelo Ikki, eu acho q Ikki teria q ser nosso novo pilar, Ikki fiz mais q o Noaa pela comunidade, Ikki fiz mais q o Lugon pela comunidade, Ikki é o verdadeiro coraçao de   asil, obrigado Ikki, obrigado Lobby da Garotada  ;p ;p")
   }
   if(comando === "parabens") {
     message.channel.send ("Parabéns pelo 2nd lugar!")
@@ -643,16 +636,15 @@ const arrayquestions = [
     let fChoose;
     let sChoose;
   
-    if(AliPar.includes(args[1])) {
+    if(args[1] == AliPar) {
        fChoose = Parasoul;
-     } else if (AliBand.includes(args[1])) {
+     } else if (args[1] == AliBand) {
        fChoose = BigBand;
      }
     
      switch(args[2]) {
         case "jmp" : {
-          const temp = "jMP -> ";
-          sChoose = temp.concat(fChoose.move.jMP);
+          sChoose = "jMP -> ".concat(fChoose.move.jMP);
           break;
         }
         case "jhk" : {
